@@ -1,0 +1,9 @@
+.teyvat-travel-ring{position:fixed;left:0;top:0;width:110px;height:110px;z-index:95;opacity:0;pointer-events:none;user-select:none;contain:layout style;transform:translate(-50%,-50%);color:var(--travel-color,#c8dfef);filter:drop-shadow(0 0 7px currentColor)}
+.teyvat-travel-ring svg{display:block;width:100%;height:100%;stroke:currentColor;stroke-width:1.3;overflow:visible}
+.teyvat-travel-ring svg path{stroke:#fff6d6;stroke-width:1;fill:var(--travel-color,#c8dfef);fill-opacity:.18}
+.teyvat-map-pin[data-visited=true]{position:relative}
+.teyvat-map-pin[data-visited=true]::after{content:"";position:absolute;inset:0 9px 24px;border:1px solid #f2d9a3b3;border-radius:50%;box-shadow:0 0 10px #ebd09242,inset 0 0 7px #fff2c626;pointer-events:none}
+.teyvat-map-pin[data-visited=true] img{filter:drop-shadow(0 0 5px #f1d49d85)}
+.teyvat-atlas__moon[data-visited=true] .teyvat-atlas__moon-orb{outline:1px solid #f2d9a3b3;outline-offset:5px;box-shadow:0 0 15px #e4cf9f55}
+@media(max-width:760px){.teyvat-travel-ring{width:80px;height:80px}.teyvat-map-pin[data-visited=true]::after{inset:0 7px 21px}}
+@media(prefers-reduced-motion:reduce){.teyvat-travel-ring{display:none}}

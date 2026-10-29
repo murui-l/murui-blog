@@ -6,8 +6,17 @@
   --world-height:clamp(560px,45vw,760px);
 }
 .home-scrapbook.home-composed .home-world__figure {
-  min-width:0;height:var(--world-height);pointer-events:none;user-select:none;
+  position:relative;min-width:0;height:var(--world-height);width:100%;padding:0;border:0;background:transparent;user-select:none;cursor:pointer;isolation:isolate;touch-action:pan-y pinch-zoom;-webkit-tap-highlight-color:transparent;
 }
+.home-scrapbook.home-composed .home-world__figure:focus-visible{outline:2px solid #d9caa4;outline-offset:3px;border-radius:10px}
+.world-figure-effects{position:absolute;inset:0;z-index:1;pointer-events:none;user-select:none;overflow:hidden}
+.world-figure-bubble{position:absolute;left:calc(19% + var(--effect-index)*13%);top:calc(73% - var(--effect-index)*7%);width:calc(14px + var(--effect-index)*3px);height:calc(14px + var(--effect-index)*3px);border:1px solid #e9fcffdb;border-radius:50%;background:radial-gradient(circle at 30% 26%,#ffffffe0 0 5%,#c6e9ff26 15%,#d2e7ff0a 55%,#a6d8f26b);box-shadow:inset -2px -3px 7px #aad6ee4d,0 0 10px #b9e5fc40;opacity:0;animation:world-water-rise 1.4s calc(var(--effect-index)*.07s) ease-out both}
+.world-figure-butterfly{position:absolute;left:calc(24% + var(--effect-index)*18%);top:calc(57% - var(--effect-index)*12%);width:clamp(23px,2.3vw,40px);height:35px;color:#fff2da;filter:drop-shadow(0 0 5px #ffbc9680);opacity:0;animation:world-butterfly-drift 1.4s calc(var(--effect-index)*.12s) ease-out both}
+.world-figure-butterfly svg{display:block;width:100%;height:100%;animation:world-butterfly-wing .28s ease-in-out infinite alternate;transform-origin:center}
+@keyframes world-water-rise{0%{opacity:0;transform:translateY(18px) scale(.5)}18%{opacity:.9}72%{opacity:.55}100%{opacity:0;transform:translateY(-110px) translateX(12px) scale(1.12)}}
+@keyframes world-butterfly-drift{0%{opacity:0;transform:translate(0,20px) rotate(-15deg) scale(.6)}18%{opacity:.9}60%{opacity:.85;transform:translate(20px,-35px) rotate(12deg) scale(1)}100%{opacity:0;transform:translate(-12px,-90px) rotate(-8deg) scale(.8)}}
+@keyframes world-butterfly-wing{from{transform:scaleX(.55)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.world-figure-effects{display:none}.world-figure-effects *{animation:none!important}}
 .home-scrapbook.home-composed .home-world__figure img {
   display:block;width:100%;height:100%;object-fit:contain;object-position:center;
   filter:drop-shadow(0 9px 15px #45587220);

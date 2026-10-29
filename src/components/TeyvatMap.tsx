@@ -7,6 +7,8 @@ import type { Map as LeafletMap } from "leaflet";
 import { teyvatMap, teyvatDestinations } from "@/lib/teyvat";
 import { musicActions } from "@/lib/music-player-store";
 import TeyvatLink from "./TeyvatLink";
+import { teyvatVisits } from "./teyvat-visits";
+import { requestTeyvatTravel } from "./TeyvatTravelEffects";
 import "leaflet/dist/leaflet.css";
 import "./Teyvat.css";
 
@@ -51,23 +53,36 @@ export default function TeyvatMap({ embedded = false }: { embedded?: boolean }) 
         map.on("dragend", () => { lastDrag = performance.now(); });
         map.on("movestart zoomstart", () => { interacted = true; });
         map.on("moveend zoomend", () => { if (disposed) return; const center = map.getCenter(); rememberedViews[viewKey] = { center: [center.lat, center.lng], zoom: map.getZoom(), width: map.getSize().x }; });
+        const visitAnchors: { anchor: HTMLAnchorElement; slug: string; name: string }[] = [];
         for (const nation of teyvatDestinations) {
           if (!nation.point) continue;
           const anchor = document.createElement("a");
           anchor.dataset.nation = nation.slug;
           anchor.className = "teyvat-map-pin"; anchor.href = `/teyvat/${nation.slug}`;
           anchor.style.setProperty("--nation-accent", nation.color); anchor.setAttribute("aria-label", `前往${nation.name}`);
+          visitAnchors.push({ anchor, slug: nation.slug, name: nation.name });
           const crest = document.createElement("img"); crest.src = nation.crest.src; crest.alt = ""; crest.width = 42; crest.height = 42;
           const name = document.createElement("span"); name.textContent = nation.name; anchor.append(crest, name);
           const activate = (event: MouseEvent) => {
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
             event.preventDefault();
             if (performance.now() - lastDrag < 220) return;
+            requestTeyvatTravel(nation.slug, anchor, event);
             musicActions.enterTeyvat(nation.slug, nation.tracks, true); router.push(`/teyvat/${nation.slug}`);
           };
           anchor.addEventListener("click", activate); cleanups.push(() => anchor.removeEventListener("click", activate));
           L.marker([teyvatMap.height * (1 - nation.point[1]), teyvatMap.width * nation.point[0]], { icon: L.divIcon({ className: "teyvat-marker", html: anchor, iconSize: [96, 78], iconAnchor: [48, 39] }), keyboard: false }).addTo(map);
         }
+        const updateVisits = () => {
+          const visited = teyvatVisits.getSnapshot();
+          for (const { anchor, slug, name } of visitAnchors) {
+            const seen = visited.includes(slug);
+            anchor.dataset.visited = String(seen);
+            anchor.setAttribute("aria-label", `前往${name}${seen ? "，已到访" : ""}`);
+          }
+        };
+        cleanups.push(teyvatVisits.subscribe(updateVisits));
+        updateVisits();
         const reset = () => fit();
         element.addEventListener("teyvat-reset", reset);
         cleanups.push(() => element.removeEventListener("teyvat-reset", reset));

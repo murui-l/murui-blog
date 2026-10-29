@@ -8,6 +8,7 @@ import type { GalleryImage, GallerySnapshot } from "@/lib/gallery-types";
 import Icon from "./Icon";
 import CharacterBookmarks from "./CharacterBookmarks";
 import SoftImage from "./SoftImage";
+import CameraViewfinder from "./CameraViewfinder";
 import "./PhotoWall.css";
 
 type DeletedImage = GalleryImage & { deletedAt?: string };
@@ -280,7 +281,7 @@ export default function PhotoWall({ initialData, initialCategoryId = null, initi
 
     <dialog ref={lightboxDialog} className="pw-lightbox" aria-label="查看大图" onClose={() => { setLightboxId(null); const target = previousFocus.current?.isConnected ? previousFocus.current : galleryBack.current || document.querySelector<HTMLElement>(".pw-heading button"); target?.focus({ preventScroll: true }); }} onClick={event => { if (event.target === event.currentTarget) lightboxDialog.current?.close(); }} onKeyDown={event => { if (event.key === "ArrowLeft" || event.key === "ArrowRight") { event.preventDefault(); moveImage(event.key === "ArrowRight" ? 1 : -1); } }}>
       <button className="pw-lightbox-close" type="button" onClick={() => lightboxDialog.current?.close()} aria-label="关闭大图" autoFocus><Icon name="close" size={23} /></button>
-      {lightboxImage && <img className="pw-full-image" src={lightboxImage.src} width={lightboxImage.width} height={lightboxImage.height} alt={lightboxImage.alt || `${selectedCategory?.name || "相册"}图片 ${lightboxIndex + 1}`} />}
+      {lightboxImage && <><CameraViewfinder key={lightboxImage.src} imageSelector=".pw-full-image" /><img className="pw-full-image" src={lightboxImage.src} width={lightboxImage.width} height={lightboxImage.height} alt={lightboxImage.alt || `${selectedCategory?.name || "相册"}图片 ${lightboxIndex + 1}`} /></>}
       {visibleImages.length > 1 && <><button className="pw-lightbox-prev" type="button" onClick={() => moveImage(-1)} aria-label="上一张图片"><Icon name="chevron" size={25} /></button><button className="pw-lightbox-next" type="button" onClick={() => moveImage(1)} aria-label="下一张图片"><Icon name="chevron" size={25} /></button><span className="pw-lightbox-counter" role="status">{lightboxIndex + 1} / {visibleImages.length}</span></>}
     </dialog>
 

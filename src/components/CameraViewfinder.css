@@ -1,0 +1,12 @@
+.camera-viewfinder{position:fixed;z-index:1;pointer-events:none;user-select:none;color:#f5e4bb;opacity:0;visibility:hidden;filter:drop-shadow(0 1px 3px #152439b3)}
+.camera-viewfinder[data-ready=true]{visibility:visible}
+.camera-viewfinder[data-ready=true][data-quiet=false]{animation:camera-frame-arrive 1.35s ease-out both}
+.camera-viewfinder[data-ready=true][data-quiet=true]{opacity:.22;animation:none}
+.camera-viewfinder__corner{position:absolute;width:clamp(14px,2.2vw,27px);height:clamp(14px,2.2vw,27px);border:1px solid currentColor;box-sizing:border-box}
+.camera-viewfinder__corner::after{content:"";position:absolute;width:3px;height:3px;border:1px solid currentColor;transform:rotate(45deg)}
+.camera-viewfinder__corner--tl{top:6px;left:6px;border-right:0;border-bottom:0}.camera-viewfinder__corner--tl::after{top:4px;left:4px}
+.camera-viewfinder__corner--tr{top:6px;right:6px;border-left:0;border-bottom:0}.camera-viewfinder__corner--tr::after{top:4px;right:4px}
+.camera-viewfinder__corner--bl{bottom:6px;left:6px;border-right:0;border-top:0}.camera-viewfinder__corner--bl::after{bottom:4px;left:4px}
+.camera-viewfinder__corner--br{bottom:6px;right:6px;border-left:0;border-top:0}.camera-viewfinder__corner--br::after{bottom:4px;right:4px}
+@keyframes camera-frame-arrive{0%{opacity:0;transform:scale(1.025)}15%{opacity:.85;transform:scale(1)}60%{opacity:.65}100%{opacity:0;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.camera-viewfinder[data-ready=true][data-quiet=false]{animation:none;opacity:.22}}

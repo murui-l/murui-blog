@@ -9,6 +9,7 @@ import { characterPhotos, type CharacterCollection } from "@/lib/characters";
 import type { GalleryImage, GallerySnapshot } from "@/lib/gallery-types";
 import SoftImage from "./SoftImage";
 import Icon from "./Icon";
+import CameraViewfinder from "./CameraViewfinder";
 import "./CharacterGallery.css";
 
 function sourceLink(value?: string) {
@@ -93,6 +94,7 @@ export default function CharacterGallery({ character, initialData }: { character
     <dialog ref={dialog} className="character-lightbox" aria-label={`${character.name}图片大图`} onClose={() => { setLightboxId(null); (returnFocus.current?.isConnected ? returnFocus.current : backLink.current)?.focus({ preventScroll: true }); }} onClick={event => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={event => { if (["ArrowLeft", "ArrowRight"].includes(event.key)) { event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1); } }}>
       <button type="button" className="character-lightbox__close" aria-label="关闭大图" autoFocus onClick={() => dialog.current?.close()}><Icon name="close" size={23} /></button>
       {active && <div className="character-lightbox__content">
+        <CameraViewfinder key={active.src} imageSelector=".character-lightbox__content>img" />
         <img key={active.src} src={active.src} width={active.width} height={active.height} alt={active.alt || `${character.name}收藏图片`} />
         {(active.author || source) && <p className="character-lightbox__source">{active.author && <span>{active.author}</span>}{source && <a href={source} target="_blank" rel="noopener noreferrer">作品来源 ↗</a>}</p>}
       </div>}

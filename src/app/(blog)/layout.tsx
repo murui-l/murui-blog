@@ -7,6 +7,7 @@ import SiteFooter from "@/components/SiteFooter";
 import AdminTools from "@/components/writing/AdminTools";
 import MusicPlayer from "@/components/MusicPlayer";
 import TeyvatAudioBridge from "@/components/TeyvatAudioBridge";
+import TeyvatTravelEffects from "@/components/TeyvatTravelEffects";
 import RotatingBackground from "@/components/RotatingBackground";
 import type { Metadata, Viewport } from "next";
 import "../globals.css";
@@ -20,5 +21,5 @@ export async function generateMetadata():Promise<Metadata>{
 }
 export default async function BlogLayout({ children }: { children: React.ReactNode }) {
   const [s, posts, gallery] = await Promise.all([getSettings(), getPublicPosts(), getGallerySnapshot()]);
-  return <html lang="zh-CN" data-scroll-behavior="smooth"><body className="blog-glass"><RotatingBackground /><a className="skip-link" href="#main">跳到正文</a><KeepsakeProvider posts={toKeepsakePosts(posts)} initialGallery={gallery}><Header><AdminTools /></Header>{children}<SiteFooter name={s.name} author={s.author} year={new Date().getFullYear()} gallery={gallery}/><MusicPlayer /><TeyvatAudioBridge /></KeepsakeProvider></body></html>;
+  return <html lang="zh-CN" data-scroll-behavior="smooth"><body className="blog-glass"><RotatingBackground /><a className="skip-link" href="#main">跳到正文</a><KeepsakeProvider posts={toKeepsakePosts(posts)} initialGallery={gallery}><Header><AdminTools /></Header>{children}<SiteFooter name={s.name} author={s.author} year={new Date().getFullYear()} gallery={gallery}/><MusicPlayer /><TeyvatAudioBridge /><TeyvatTravelEffects /></KeepsakeProvider></body></html>;
 }

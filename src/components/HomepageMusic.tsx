@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { musicActions, useMusicPlayer } from "@/lib/music-player-store";
 import qqPlaylist from "@/lib/qq-playlist.json";
 import { MusicCredit, MusicPlayMode, MusicSeek, MusicVolume, PlayerIcon } from "./MusicPlayer";
@@ -13,11 +13,36 @@ export default function HomepageMusic() {
   const { tracks, index, playing, loading, error, cloudMessage } = useMusicPlayer();
   const [failedCover, setFailedCover] = useState("");
   const [showPlaylist, setShowPlaylist] = useState(false);
+  const surface = useRef<HTMLElement>(null);
+  const [jadeAwake, setJadeAwake] = useState(false);
+  useEffect(() => {
+    const element = surface.current;
+    if (!element) return;
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let inView = false;
+    const synchronize = () => setJadeAwake(inView && !document.hidden && !motion.matches);
+    const observer = new IntersectionObserver(entries => { inView = entries.some(entry => entry.isIntersecting); synchronize(); });
+    observer.observe(element);
+    motion.addEventListener("change", synchronize);
+    document.addEventListener("visibilitychange", synchronize);
+    return () => { observer.disconnect(); motion.removeEventListener("change", synchronize); document.removeEventListener("visibilitychange", synchronize); };
+  }, []);
   const track = tracks[index];
-  return <section className="homepage-music" aria-label="首页音乐播放器">
+  return <section ref={surface} className="homepage-music" aria-label="首页音乐播放器" data-jade-awake={jadeAwake} data-playing={playing}>
     <RadioStarlight />
     <div className="hm-track">
-      <span className={`hm-cover${playing ? " hm-cover-playing" : ""}`} aria-hidden="true">{track.cover && track.cover !== failedCover ? <img src={track.cover} alt="" width="64" height="64" onError={() => setFailedCover(track.cover || "")} /> : <span>♪</span>}</span>
+      <span className="hm-cover hm-jade-disc" aria-hidden="true">
+        <svg className="hm-jade-rim" viewBox="0 0 80 80" fill="none" focusable="false">
+          <circle className="hm-jade-rim__outer" cx="40" cy="40" r="36.5" strokeWidth="1.2" />
+          <circle className="hm-jade-rim__inner" cx="40" cy="40" r="31.5" strokeWidth=".8" />
+          <circle className="hm-jade-rim__orbit" cx="40" cy="40" r="34" strokeWidth=".65" strokeDasharray="1 5" />
+          {[0, 60, 120, 180, 240, 300].map(angle => <g key={angle} transform={`rotate(${angle} 40 40)`}>
+            <path className="hm-jade-rim__inlay" d="m40 1.5 3.3 5.8-3.3 5.8-3.3-5.8Z" strokeWidth=".75" />
+            <path className="hm-jade-rim__outer" d="M34.7 8.2 40 5l5.3 3.2M40 13v4" strokeWidth=".75" strokeLinecap="round" />
+          </g>)}
+        </svg>
+        {track.cover && track.cover !== failedCover ? <img src={track.cover} alt="" width="64" height="64" onError={() => setFailedCover(track.cover || "")} /> : <span>♪</span>}
+      </span>
       <div className="hm-track-text"><span className="hm-source">{track.provider === "netease" ? "NETEASE MUSIC" : "小窝电台"}</span><strong>{track.title}</strong><span>{loading ? "正在加载…" : track.artist}</span></div>
       <a className="hm-qq-link" href={qqPlaylist.url} target="_blank" rel="noopener noreferrer" onClick={musicActions.pause} title={`在 QQ 音乐打开 ${qqPlaylist.tracks.length} 首原歌单`}>QQ 原歌单 <span aria-hidden="true">↗</span></a>
     </div>

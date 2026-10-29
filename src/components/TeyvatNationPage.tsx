@@ -10,6 +10,7 @@ import { homeTeyvatHref, teyvatDestinations, type TeyvatDestination } from "@/li
 import { musicActions, useMusicPlayer } from "@/lib/music-player-store";
 import SoftImage from "./SoftImage";
 import TeyvatLink from "./TeyvatLink";
+import CameraViewfinder from "./CameraViewfinder";
 import "./Teyvat.css";
 
 const nationCalligraphy = localFont({
@@ -49,7 +50,7 @@ export default function TeyvatNationPage({ nation }: { nation: TeyvatDestination
     <footer className="teyvat-country__colophon"><span>Murui <span aria-hidden="true">✧</span></span><details><summary>素材来源</summary><a href={nation.cover.source} target="_blank" rel="noopener noreferrer">风景 · 原神官方 ↗</a>{nation.kind !== "nation" ? <span>图案 · Murui</span> : <a href={nation.crest.source} target="_blank" rel="noopener noreferrer">徽记 · 原神官方 ↗</a>}<a href="https://act.hoyolab.com/ys/app/interactive-map/index.html" target="_blank" rel="noopener noreferrer">地图 · HoYoLAB ↗</a>{nation.tracks.map(song => <a key={song.id} href={song.source} target="_blank" rel="noopener noreferrer">{song.title} · {song.artist} ↗</a>)}</details></footer>
     <dialog ref={dialog} className="teyvat-lightbox" aria-label={`${nation.name}风景大图`} onClose={() => { setActive(null); (previousFocus.current?.isConnected ? previousFocus.current : back.current)?.focus({ preventScroll: true }); }} onClick={event => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={event => { if (event.key === "ArrowLeft" || event.key === "ArrowRight") { event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1); } }}>
       <button type="button" className="teyvat-lightbox__close" aria-label="关闭大图" autoFocus onClick={() => dialog.current?.close()}>×</button>
-      {current && <div className="teyvat-lightbox__content"><img src={current.src} alt={`${nation.name}风景 ${(active ?? 0) + 1}`} width={current.width} height={current.height} /><a href={current.source} target="_blank" rel="noopener noreferrer">原神官方 · HoYoverse ↗</a></div>}
+      {current && <div className="teyvat-lightbox__content"><CameraViewfinder key={current.src} imageSelector=".teyvat-lightbox__content>img" /><img src={current.src} alt={`${nation.name}风景 ${(active ?? 0) + 1}`} width={current.width} height={current.height} /><a href={current.source} target="_blank" rel="noopener noreferrer">原神官方 · HoYoverse ↗</a></div>}
       <button className="teyvat-lightbox__prev" type="button" aria-label="上一张" onClick={() => move(-1)}>‹</button><button className="teyvat-lightbox__next" type="button" aria-label="下一张" onClick={() => move(1)}>›</button><span className="teyvat-lightbox__count">{(active ?? 0) + 1} / {pictures.length}</span>
     </dialog>
   </main>;

@@ -5,6 +5,7 @@
 import { useId, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import Icon from "./Icon";
+import CameraViewfinder from "./CameraViewfinder";
 
 type ArtworkImageProps = {
   src: string;
@@ -46,7 +47,7 @@ export default function ArtworkImage({ src, width, height, title, author, platfo
       <dialog ref={dialog} className="ah-artwork-dialog" aria-labelledby={titleId} aria-describedby={creditId} onClose={closed} onClick={event => { if (event.target === event.currentTarget) dialog.current?.close(); }}>
         <div className="ah-artwork-dialog-inner">
           <button type="button" className="ah-artwork-close" aria-label="关闭大图" onClick={() => dialog.current?.close()} autoFocus><Icon name="close" size={22} /></button>
-          {isOpen && <img className="ah-artwork-full" src={src} width={width} height={height} alt={`${title}，${credit}`} />}
+          {isOpen && <><CameraViewfinder imageSelector=".ah-artwork-full" /><img className="ah-artwork-full" src={src} width={width} height={height} alt={`${title}，${credit}`} /></>}
           <div className="ah-artwork-caption"><h2 id={titleId}>{title}</h2><p id={creditId}>{credit}</p>{sourceUrl && <a href={sourceUrl} target="_blank" rel="noopener noreferrer">查看出处 <Icon name="upRight" size={15} /><span className="ah-artwork-sr">（在新标签页打开）</span></a>}</div>
         </div>
       </dialog>
