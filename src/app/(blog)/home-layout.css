@@ -1,0 +1,162 @@
+/* One content rail for the journal, collection and transparent map.
+   Scoped to the homepage so client navigation cannot restyle country pages. */
+.home-scrapbook.home-composed {
+  --home-rail: 1240px;
+  --home-gutter: 64px;
+  --home-section-gap: clamp(48px, 6vw, 80px);
+}
+.home-scrapbook.home-composed :is(.ms-wrap, .ml-journal) {
+  width: min(var(--home-rail), calc(100% - var(--home-gutter)));
+  max-width: var(--home-rail);
+  margin-inline: auto;
+}
+
+/* The illustration accompanies the spread instead of competing with it. */
+.home-scrapbook.home-composed .ml-journal {
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 30px;
+  padding-block: 64px 0;
+  align-items: center;
+}
+.home-scrapbook.home-composed .ml-journal-paper { padding: 36px 34px 22px; }
+.home-scrapbook.home-composed .ml-journal-paper::before { inset: 12px; }
+.home-scrapbook.home-composed .ml-journal-illustration { width: 100%; justify-self: center; }
+.home-scrapbook.home-composed .ml-journal .ml-heading-row { gap: 20px; padding-bottom: 25px; }
+.home-scrapbook.home-composed .ml-journal .ml-heading { min-width: 0; }
+.home-scrapbook.home-composed .ml-journal .ml-heading h2 { font-size: 43px; flex-wrap: wrap; }
+.home-scrapbook.home-composed .ml-journal .ml-eyebrow { font-size: 9px; letter-spacing: .12em; }
+.home-scrapbook.home-composed .ml-journal .ml-description { font-size: 15px; }
+.home-scrapbook.home-composed .ml-journal .ml-clock-card,
+body[data-home-palette] .home-scrapbook.home-composed .ml-journal .ml-clock-card {
+  flex-basis: 195px; padding-left: 20px; transform: none;
+}
+.home-scrapbook.home-composed .ml-journal .ml-clock-time { font-size: 27px; }
+.home-scrapbook.home-composed .ml-journal .ml-daily-grid { gap: 32px; margin-top: 30px; }
+.home-scrapbook.home-composed .ml-journal .ml-interests { padding-top: 0; }
+.home-scrapbook.home-composed .ml-journal .ml-interests>.corner-sticker-top-left { width: 48px; height: 48px; left: -22px; top: -25px; }
+.home-scrapbook.home-composed .ml-journal .ml-interest-note { font-size: 17px; margin-top: 18px; }
+.home-scrapbook.home-composed .ml-journal .ml-mood,
+body[data-home-palette] .home-scrapbook.home-composed .ml-journal .ml-mood {
+  margin-top: 0; padding: 28px 20px; transform: rotate(.5deg);
+}
+.home-scrapbook.home-composed .ml-journal .ml-mood-margin { margin-bottom: 18px; }
+.home-scrapbook.home-composed .ml-journal .ml-mood .ml-interests-heading { font-size: 20px; }
+.home-scrapbook.home-composed .ml-journal .ml-mood-postscript { margin-top: 25px; font-size: 14px; }
+.home-scrapbook.home-composed .ml-journal .ml-mood>.corner-sticker-bottom-right { width: 48px; height: 48px; right: -15px; bottom: -17px; }
+.home-scrapbook.home-composed .ml-journal-footer { margin-top: 24px; }
+
+/* Three independent surfaces: framed photos, glass radio and bare lyrics. */
+.home-scrapbook.home-composed .ms-collection { margin-top: var(--home-section-gap); }
+.home-scrapbook.home-composed .ms-section-heading { margin-bottom: 25px; }
+.home-scrapbook.home-composed .ms-section-heading h2 { font-size: clamp(25px, 2.8vw, 34px); }
+.home-scrapbook.home-composed .ms-media-grid {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .99fr) minmax(0, .96fr);
+  align-items: start; gap: 28px; padding: 0; border: 0; border-radius: 0;
+  background: none; box-shadow: none;
+}
+.home-scrapbook.home-composed .ms-photo { display: grid; grid-template-rows: minmax(360px, 1fr) auto; min-width: 0; }
+.home-scrapbook.home-composed .ms-photo .hb-slideshow {
+  position: relative; height: 390px; min-height: 360px; border-radius: 12px;
+  background: transparent; border: 0; box-shadow: none;
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+.home-scrapbook.home-composed .ms-photo .hb-slide-frame { position: absolute; inset: 0; height: 100%; }
+.home-scrapbook.home-composed .ms-photo .home-photo-tilt__surface { padding: 7px; border-radius: 12px; background: #fffdf9; box-shadow: 0 5px 20px #54566821; }
+.home-scrapbook.home-composed .ms-photo .hb-slide-image { border-radius: 6px; }
+.home-scrapbook.home-composed .ms-photo-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; padding-top: 12px; }
+.home-scrapbook.home-composed .ms-photo-meta>a,
+.home-scrapbook.home-composed .ms-photo-meta .mk-entry,
+body[data-home-palette] .home-scrapbook.home-composed .ms-photo-meta .mk-entry {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px;
+  border: 0; padding: 3px 0; border-radius: 0; background: transparent;
+  box-shadow: none; color: #586279; font-size: 11px; text-decoration: none;
+  text-shadow: 0 1px 5px #fff;
+}
+.home-scrapbook.home-composed .ms-photo-meta :is(a,button):hover { color: #865573; }
+.home-scrapbook.home-composed .ms-photo-meta :is(a,button):focus-visible { outline: 2px solid #937ca5; outline-offset: 4px; }
+.home-scrapbook.home-composed .ms-radio { padding: 0; border: 0; }
+.home-scrapbook.home-composed .ms-radio .ms-paper-label {
+  position: absolute; left: 22px; top: 17px; margin: 0; padding: 0; border: 0;
+  background: transparent; transform: none; font-size: 9px; letter-spacing: .09em;
+}
+.home-scrapbook.home-composed .ms-radio .homepage-music,
+body[data-home-palette] .home-scrapbook.home-composed .ms-radio .homepage-music {
+  height: auto; min-height: 390px; padding: 48px 20px 21px;
+  border: 0; border-radius: 0; background: transparent;
+  box-shadow: none; overflow: hidden;
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  text-shadow: 0 1px 2px #ffffffe0, 0 0 8px #ffffffa6;
+}
+/* Small labels stay legible over both pale and darker background photos. */
+.home-scrapbook.home-composed .ms-radio .homepage-music :is(.hm-track-text>span:last-child, .hm-qq-link, .music-seek>div, .hm-track-count, .music-credit, .music-volume>span) { color: #5c5871; }
+.home-scrapbook.home-composed .ms-radio .ms-paper-label { color: #735c75; text-shadow: 0 1px 2px #ffffffe0, 0 0 8px #ffffffa6; }
+.home-scrapbook.home-composed .ms-radio .hm-track { flex-wrap: wrap; gap: 8px 10px; margin-bottom: 17px; }
+.home-scrapbook.home-composed .ms-radio .hm-track-text>strong { white-space: normal; overflow-wrap: anywhere; font-size: 15px; line-height: 1.5; }
+.home-scrapbook.home-composed .ms-radio .hm-track-text { flex-basis: calc(100% - 72px); }
+.home-scrapbook.home-composed .ms-radio .hm-cover { width: 52px; height: 52px; flex-basis: 52px; }
+.home-scrapbook.home-composed .ms-radio .hm-qq-link { margin-left: auto; }
+.home-scrapbook.home-composed .ms-lyrics { min-width: 0; padding-top: 34px; background: none; }
+
+/* Keep the complete map and its transparent surroundings, without a title or
+   another card. Width-based height avoids the previous near-full-screen gap. */
+.home-scrapbook.home-composed .teyvat-atlas--embedded { margin-block: var(--home-section-gap) 0; scroll-margin-top: 28px; }
+.home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__canvas { height: clamp(500px, 50vw, 640px); }
+.home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__moon { left: 10%; top: 8%; }
+.home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__moon-orb { width: 64px; height: 64px; }
+.home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__tools { right: 5%; bottom: 10px; }
+.home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__source { left: 5%; bottom: 19px; }
+.home-scrapbook.home-composed .ms-links { margin-top: var(--home-section-gap); }
+
+@media (max-width: 1179px) {
+  .home-scrapbook.home-composed .ml-journal { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .home-scrapbook.home-composed .ml-journal-illustration { width: 180px; justify-self: end; margin-right: 30px; }
+}
+@media (max-width: 899px) {
+  .home-scrapbook.home-composed { --home-gutter: 40px; }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__canvas { height: clamp(420px, 74vw, 540px); }
+}
+@media (max-width: 760px) {
+  .home-scrapbook.home-composed { --home-gutter: 28px; --home-section-gap: 44px; }
+  .home-scrapbook.home-composed .ml-journal { padding-top: 44px; padding-bottom: 0; }
+  .home-scrapbook.home-composed .ml-journal-paper { padding: 30px 22px 20px; }
+  .home-scrapbook.home-composed .ml-journal .ml-heading-row { gap: 20px; }
+  .home-scrapbook.home-composed .ml-journal .ml-heading h2 { font-size: clamp(32px, 7vw, 42px); }
+  .home-scrapbook.home-composed .ml-journal .ml-clock-card,
+  body[data-home-palette] .home-scrapbook.home-composed .ml-journal .ml-clock-card { flex: auto; padding: 0 0 0 12px; }
+  .home-scrapbook.home-composed .ml-journal .ml-clock-time { font-size: 23px; }
+  .home-scrapbook.home-composed .ml-journal .ml-daily-grid { gap: 30px; margin-top: 30px; }
+  .home-scrapbook.home-composed .ml-journal .ml-mood,
+  body[data-home-palette] .home-scrapbook.home-composed .ml-journal .ml-mood { padding: 26px 18px 30px; transform: none; margin-top: 10px; }
+  .home-scrapbook.home-composed .ml-journal .ml-interests>.corner-sticker-top-left { width: 40px; height: 40px; left: -15px; top: -21px; }
+  .home-scrapbook.home-composed .ml-journal .ml-mood>.corner-sticker-bottom-right { width: 40px; height: 40px; right: -10px; bottom: -13px; }
+  .home-scrapbook.home-composed .ml-journal-illustration { width: 160px; margin-right: 16px; }
+  .home-scrapbook.home-composed .ms-section-heading { margin-bottom: 20px; }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__canvas { height: clamp(420px, 90vw, 540px); }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__moon { left: 3%; top: 7%; }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__moon-orb { width: 50px; height: 50px; }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__tools { right: 2px; bottom: 0; }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-atlas__source { left: 2px; bottom: 11px; }
+}
+@media (max-width: 390px) {
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-map-pin[data-nation=inazuma] { transform: translate(8px, 20px); }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-map-pin[data-nation=snezhnaya] { transform: translateY(-8px); }
+  .home-scrapbook.home-composed .teyvat-atlas--embedded .teyvat-map-pin[data-nation=mondstadt] { transform: translate(12px, -10px); }
+}
+
+@media (min-width: 900px) and (max-width: 1279px) {
+  .home-scrapbook.home-composed .ms-media-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; }
+  .home-scrapbook.home-composed .ms-photo { grid-column: 1 / -1; }
+  .home-scrapbook.home-composed .ms-photo .hb-slideshow { height: 420px; }
+}
+@media (max-width: 899px) {
+  .home-scrapbook.home-composed .ms-media-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .home-scrapbook.home-composed .ms-photo { grid-template-rows: auto auto; }
+  .home-scrapbook.home-composed .ms-photo .hb-slideshow { height: clamp(290px, 66vw, 490px); min-height: 0; }
+  .home-scrapbook.home-composed .ms-radio .homepage-music { min-height: 0; }
+  .home-scrapbook.home-composed .ms-lyrics { padding-top: 0; }
+}
+@media (max-width: 390px) {
+  .home-scrapbook.home-composed .ms-radio .homepage-music { padding-inline: 16px; }
+  .home-scrapbook.home-composed .ms-radio .hm-transport { gap: 0; }
+  .home-scrapbook.home-composed .ms-radio .hm-transport>.music-icon-button { width: 32px; flex-basis: 32px; }
+}

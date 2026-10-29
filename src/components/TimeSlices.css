@@ -1,0 +1,6 @@
+.time-slices{background:radial-gradient(ellipse at 100% 0,#e3f0ffb0,transparent 60%),linear-gradient(125deg,#fffdfb,#f4f8ff);border-color:#dfe6f1}
+.time-slices .life-notes-kicker,.time-slices .life-notes-read{color:#7893b2}
+.time-slices .life-notes-card{border-color:#e0e8f2}
+.time-slices .time-slices-write{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;padding:12px 18px;background:#edf2ff;border:1px solid #dbe3f3;border-radius:24px;color:#6a80a4;font-size:13px;text-decoration:none}
+.time-slices .time-slices-write:hover{background:#e4edff}
+@media(max-width:600px){.time-slices .life-notes-heading{align-items:flex-start;flex-direction:column;gap:16px}.time-slices .time-slices-write{padding:10px 15px}}

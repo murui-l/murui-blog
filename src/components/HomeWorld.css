@@ -1,0 +1,45 @@
+/* Decorative cutouts share the map's space without covering its controls. */
+.home-scrapbook.home-composed .home-world {
+  width:min(1880px,calc(100% - 32px));margin:var(--home-section-gap) auto 0;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,.85fr);
+  align-items:center;min-width:0;
+  --world-height:clamp(560px,45vw,760px);
+}
+.home-scrapbook.home-composed .home-world__figure {
+  min-width:0;height:var(--world-height);pointer-events:none;user-select:none;
+}
+.home-scrapbook.home-composed .home-world__figure img {
+  display:block;width:100%;height:100%;object-fit:contain;object-position:center;
+  filter:drop-shadow(0 9px 15px #45587220);
+}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded {
+  width:100%;max-width:none;margin:0;min-width:0;
+}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__canvas {height:var(--world-height)}
+.home-scrapbook.home-composed .home-world .teyvat-map-pin {width:54px;height:58px;margin:10px 21px;gap:2px}
+.home-scrapbook.home-composed .home-world .teyvat-map-pin img {width:28px;height:28px}
+.home-scrapbook.home-composed .home-world .teyvat-map-pin span {font-size:11px;letter-spacing:.06em;padding:0 5px;line-height:1.7}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__moon {left:0;top:5%}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__moon-orb {width:54px;height:54px}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__tools {right:0;bottom:4px}
+.home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__source {left:0;bottom:13px}
+@media(max-width:1119px){
+  .home-scrapbook.home-composed .home-world {
+    width:min(var(--home-rail),calc(100% - var(--home-gutter)));
+    grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px;
+    --world-height:clamp(450px,66vw,620px);
+  }
+  .home-scrapbook.home-composed .home-world .teyvat-atlas--embedded {grid-row:1;grid-column:1/-1}
+  .home-scrapbook.home-composed .home-world__figure {grid-row:2;height:clamp(240px,39vw,400px)}
+  .home-scrapbook.home-composed .home-world__figure--kokomi {grid-column:1}
+  .home-scrapbook.home-composed .home-world__figure--hutao {grid-column:2}
+}
+@media(max-width:760px){
+  .home-scrapbook.home-composed .home-world {row-gap:16px;--world-height:clamp(420px,90vw,540px)}
+  .home-scrapbook.home-composed .home-world .teyvat-map-pin {width:44px;height:50px;margin:14px 26px;gap:1px}
+  .home-scrapbook.home-composed .home-world .teyvat-map-pin img {width:25px;height:25px}
+  .home-scrapbook.home-composed .home-world .teyvat-map-pin span {letter-spacing:.02em;padding:0 4px;line-height:1.6}
+  .home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__moon {left:3%;top:7%}
+  .home-scrapbook.home-composed .home-world .teyvat-atlas--embedded .teyvat-atlas__moon-orb {width:50px;height:50px}
+  .home-scrapbook.home-composed .home-world__figure {height:clamp(215px,48vw,360px)}
+}

@@ -1,0 +1,80 @@
+.home-photo-tilt {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Older browsers keep the existing complete image without the enhancement. */
+.home-photo-tilt__surface { display: contents; }
+.home-photo-tilt__surface > .glare-wrapper { display: none; }
+
+@supports (width: 1cqw) {
+  .home-photo-tilt { container-type: size; }
+
+  .home-photo-tilt .home-photo-tilt__surface {
+    --photo-clearance: 20px;
+    position: relative;
+    display: block;
+    flex: none;
+    box-sizing: content-box;
+    width: min(calc(100cqw - var(--photo-clearance)), calc((100cqh - var(--photo-clearance)) * var(--photo-ratio)), var(--photo-native-width));
+    aspect-ratio: var(--photo-ratio);
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background: rgba(247,245,255,.8);
+    /* Transform lives here; the outer slide owns its 900ms opacity animation. */
+    transform-origin: center;
+  }
+
+  .hb-slide-frame .home-photo-tilt .hb-slide-image {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    padding: 0;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    object-fit: contain;
+  }
+
+  .home-photo-tilt .home-photo-tilt__surface > .glare-wrapper {
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 220ms ease;
+  }
+
+  .home-photo-tilt[data-active="true"] .home-photo-tilt__surface > .glare-wrapper { opacity: 1; }
+
+  .home-photo-tilt[data-active="false"] .home-photo-tilt__surface {
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  .home-photo-tilt[data-enabled="false"] .home-photo-tilt__surface,
+  .home-photo-tilt[data-enabled="false"] .home-photo-tilt__surface > .glare-wrapper {
+    transition: none !important;
+  }
+
+  @media (min-width: 961px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    /* Leave room for the corners of the framed photo to move without cropping. */
+    .home-photo-tilt .home-photo-tilt__surface { --photo-clearance: 42px; }
+  }
+}
+
+@media (max-width: 960px), (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .home-photo-tilt .home-photo-tilt__surface {
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+  .home-photo-tilt .home-photo-tilt__surface > .glare-wrapper { display: none; }
+}

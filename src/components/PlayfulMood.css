@@ -1,0 +1,4 @@
+.home-scrapbook .ml-mood-keep{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:9px 18px;margin:3px 0 17px;border:1px solid #ffffffd9;border-radius:999px;background:linear-gradient(110deg,#fff5fac9,#edf7ffd4);color:#68728e;font:inherit;font-size:12px;font-weight:600;cursor:pointer;box-shadow:0 4px 14px #a5a7c215;transition:transform .2s,box-shadow .2s}
+.home-scrapbook .ml-mood-keep:hover{transform:translateY(-2px);box-shadow:0 5px 17px #a5a7c230}
+.home-scrapbook .ml-mood-keep:focus-visible{outline:3px solid #9eb7d4;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.home-scrapbook .ml-mood-keep{transition:none}.home-scrapbook .ml-mood-keep:hover{transform:none}}

@@ -1,0 +1,14 @@
+@property --murui-paper-a{syntax:"<color>";inherits:true;initial-value:#fbf4fae0}
+@property --murui-paper-b{syntax:"<color>";inherits:true;initial-value:#eff2fbd4}
+@property --murui-accent{syntax:"<color>";inherits:true;initial-value:#795c8f}
+@property --murui-highlight{syntax:"<color>";inherits:true;initial-value:#cfb7d7}
+body[data-home-palette]{transition:--murui-paper-a 2.2s ease-in-out,--murui-paper-b 2.2s ease-in-out,--murui-accent 2.2s ease-in-out,--murui-highlight 2.2s ease-in-out}
+body[data-home-palette] .home-scrapbook :is(.ml-clock-card,.ml-interests,.ml-mood,.mh-typing),body[data-home-palette] .home-scrapbook .ms-radio .homepage-music,body[data-home-palette] .site-header.header-autohide .header-panel{background:linear-gradient(130deg,var(--murui-paper-a),var(--murui-paper-b))}
+body[data-home-palette] .home-scrapbook :is(.mk-entry,.mh-notice-trigger){background:linear-gradient(110deg,var(--murui-paper-a),var(--murui-paper-b));color:var(--murui-accent);border-color:#fffffff0}
+body[data-home-palette] .home-scrapbook .mh-title{background-image:linear-gradient(115deg,var(--murui-highlight),#d8c4d5 40%,var(--murui-paper-b) 70%,var(--murui-highlight))}
+body[data-home-palette] .home-scrapbook :is(.mh-prompt,.ml-heading i,.ms-section-heading h2>span,.ml-interests-heading>span:first-child){color:var(--murui-accent)}
+body[data-home-palette] .home-scrapbook .hm-play{background:var(--murui-accent);border-color:var(--murui-accent)}
+body[data-home-palette] .home-scrapbook .hm-source{background:var(--murui-paper-b);color:var(--murui-accent)}
+body[data-home-palette] .site-header.header-autohide .header-tab{background:linear-gradient(105deg,var(--murui-paper-a),var(--murui-paper-b))}
+body[data-home-palette] .site-header.header-autohide .header-tab-handle{background:var(--murui-highlight)}
+@media(prefers-reduced-motion:reduce){body[data-home-palette]{transition:none}}

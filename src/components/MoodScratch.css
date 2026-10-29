@@ -1,0 +1,22 @@
+.home-scrapbook .mood-scratch{margin-top:19px;min-width:0}
+.home-scrapbook .mood-scratch-paper{position:relative;min-height:168px;border-radius:18px;isolation:isolate;background:#fff8;overflow:hidden;border:1px solid #ffffffbd}
+.home-scrapbook .mood-scratch-content{padding:14px 16px 10px}
+.home-scrapbook .mood-scratch-content .ml-mood-name{margin-top:7px}
+.home-scrapbook .mood-scratch-content .ml-mood-text{margin-bottom:9px}
+.home-scrapbook .mood-scratch-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;background:radial-gradient(circle at 100% 100%,#dce9f5,transparent 70%),linear-gradient(140deg,#f4dbe8,#f0dce9);color:#83647f;pointer-events:none}
+.home-scrapbook .mood-scratch-fallback>span{font-size:28px;color:#ba829f}
+.home-scrapbook .mood-scratch-fallback>strong{font-size:17px;font-weight:600;letter-spacing:.12em}
+.home-scrapbook .mood-scratch-fallback>small{font-size:11px}
+.home-scrapbook .mood-scratch[data-scratch-ready=true] .mood-scratch-fallback{display:none}
+.home-scrapbook .mood-scratch-surface{position:absolute;inset:0;z-index:2}
+.home-scrapbook .mood-scratch-surface .ScratchCard__Container{text-align:left}
+.home-scrapbook .mood-scratch-surface canvas{left:0;top:0}
+.home-scrapbook .mood-scratch-actions{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px}
+.home-scrapbook .mood-scratch-actions .ml-mood-keep{margin:0;font-size:11px;min-height:40px;padding:8px 13px}
+.home-scrapbook .mood-scratch-actions .ml-mood-keep:disabled{opacity:.45;cursor:default;transform:none;box-shadow:none}
+.home-scrapbook .mood-scratch-reveal{padding:9px 3px;border:0;border-bottom:1px dashed #baa2bd;background:transparent;color:#7b6586;font:12px/1.6 var(--sans);cursor:pointer;min-height:40px}
+.home-scrapbook .mood-scratch-reveal[aria-disabled=true]{border-color:transparent;color:#8c8195;cursor:default}
+.home-scrapbook .mood-scratch-status{margin:12px auto 15px;font:11px/1.7 var(--sans);color:#80748a;max-width:300px}
+.home-scrapbook .mood-scratch[data-revealed=true] .mood-scratch-status{position:absolute;clip-path:inset(50%);width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;white-space:nowrap}
+@media(max-width:760px){.home-scrapbook .mood-scratch-paper{min-height:184px}.home-scrapbook .mood-scratch-content{padding:16px 10px 12px}.home-scrapbook .mood-scratch-actions{gap:7px}.home-scrapbook .mood-scratch-content .ml-mood-text{font-size:14px}.home-scrapbook .mood-scratch-actions .ml-mood-keep{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.home-scrapbook .mood-scratch-surface,.home-scrapbook .mood-scratch-fallback{display:none}}

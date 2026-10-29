@@ -1,0 +1,22 @@
+.rss-card-trigger { width: 100%; font-family: inherit; text-align: left; cursor: pointer; }
+.rss-footer-trigger { padding: 0; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.rss-footer-trigger:hover { text-decoration: underline; text-underline-offset: 4px; }
+.rss-card-trigger:focus-visible, .rss-footer-trigger:focus-visible { outline: 2px solid #6b8bbb; outline-offset: 4px; }
+.rss-dialog { width: min(480px, calc(100vw - 32px)); max-width: calc(100vw - 32px); max-height: calc(100dvh - 32px); overflow: auto; margin: auto; padding: 0; border: 1px solid #dee6f2; border-radius: 20px; background: #f9fbff; color: #435774; font-family: var(--sans), sans-serif; box-shadow: 0 24px 90px #26395340; text-align: left; }
+.rss-dialog::backdrop { background: #26395399; backdrop-filter: blur(4px); }
+.rss-dialog-body { position: relative; padding: 32px; }
+.rss-close { position: absolute; right: 15px; top: 15px; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 1px solid #e0e7f2; border-radius: 50%; background: #fff; color: #607798; cursor: pointer; }
+.rss-dialog-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: #eaf0fb; color: #728fbb; margin-bottom: 18px; }
+.rss-dialog h2 { margin: 0 32px 12px 0; color: #435774; font-size: 23px; font-weight: 600; line-height: 1.5; }
+.rss-dialog .rss-intro, .rss-dialog .rss-help { margin: 0; color: #687b96; font-size: 14px; line-height: 1.9; letter-spacing: 0; }
+.rss-steps { padding-left: 23px; margin: 20px 0; color: #526987; font-size: 14px; line-height: 1.9; }
+.rss-steps li + li { margin-top: 7px; }
+.rss-address-label { display: block; margin-bottom: 8px; color: #647b9c; font-size: 12px; }
+.rss-address { display: block; box-sizing: border-box; width: 100%; min-width: 0; padding: 12px; border: 1px solid #d9e2f1; border-radius: 9px; background: #fff; color: #496489; font: 16px/1.5 var(--sans), sans-serif; }
+.rss-copy { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 12px; padding: 13px 16px; border: 0; border-radius: 9px; background: #607fad; color: #fff; font: 14px/1.5 var(--sans), sans-serif; cursor: pointer; }
+.rss-copy:hover { background: #4c6e9f; }
+.rss-dialog button:focus-visible, .rss-address:focus-visible { outline: 3px solid #9db6dc; outline-offset: 3px; }
+.rss-dialog .rss-status { min-height: 22px; margin: 8px 0 14px; color: #4e7299; font-size: 12px; line-height: 1.8; letter-spacing: 0; }
+.rss-dialog .rss-help { padding-top: 16px; border-top: 1px solid #e0e7f2; font-size: 12px; }
+body:has(.rss-dialog[open]) { overflow: hidden; }
+@media (max-width: 480px) { .rss-dialog-body { padding: 25px 21px; } .rss-dialog h2 { font-size: 21px; } }

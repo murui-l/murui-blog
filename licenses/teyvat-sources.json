@@ -1,0 +1,1294 @@
+{
+  "capturedAt": "2026-10-23T15:44:06.992Z",
+  "owner": "HoYoverse / miHoYo; music by HOYO-MiX and credited composers",
+  "usage": "Fan travel presentation. Official artwork and map retain their original ownership; not relicensed as open-source artwork. Local conversions: rotate to orientation, resize and WebP encode; no watermark removal. Audio uses provider public streaming links; no local audio copies.",
+  "officialWorld": "https://genshin.hoyoverse.com/en/map",
+  "officialMap": "https://act.hoyolab.com/ys/app/interactive-map/index.html",
+  "map": {
+    "version": "eea752b746ae1f2e0c1988a574f2b7b0",
+    "crop": {
+      "left": 185,
+      "top": 4,
+      "width": 2702,
+      "height": 2295
+    },
+    "width": 2702,
+    "height": 2295,
+    "source": "https://act.hoyolab.com/ys/app/interactive-map/index.html",
+    "tiles": [
+      {
+        "x": 4,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_0_N3.webp",
+        "SHA256": "e4f1ac99613fcd135e14a3f4a4c5f3ad41186a096f75488a5cf0b27bffdf9a1a"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_0_N3.webp",
+        "SHA256": "f45e8be810a28a73f9fdaae13e0119780cb7db75d5b8600c31717cbf6aeed1bf"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_0_N3.webp",
+        "SHA256": "71ecb6b42e8132f0dd6674094fbcc95885e7fb135536302d999f4eb5689ec26c"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_0_N3.webp",
+        "SHA256": "674e283519cd3ceecb684651fb65ce80ff8e9c1b7e36b4c9fe23765a124298e7"
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_0_N3.webp",
+        "SHA256": "f0734df5afd629bb8efc7798a094924fb7b13033674e32cf8db772adaa11e1e6"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_0_N3.webp",
+        "SHA256": "5a912f4fd2ff5819f9134398a5495eadadcc00d008081036188230ea6cebd07e"
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_0_N3.webp",
+        "SHA256": "e4f1ac99613fcd135e14a3f4a4c5f3ad41186a096f75488a5cf0b27bffdf9a1a"
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_0_N3.webp",
+        "SHA256": "f45e8be810a28a73f9fdaae13e0119780cb7db75d5b8600c31717cbf6aeed1bf"
+      },
+      {
+        "x": 12,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_0_N3.webp",
+        "SHA256": "674e283519cd3ceecb684651fb65ce80ff8e9c1b7e36b4c9fe23765a124298e7"
+      },
+      {
+        "x": 13,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_0_N3.webp",
+        "SHA256": "e4f1ac99613fcd135e14a3f4a4c5f3ad41186a096f75488a5cf0b27bffdf9a1a"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_0_N3.webp",
+        "SHA256": "37af3aed4d445753267bb89ba5ce292fb04b8280218598f9dff8a1e5d08db179"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_1_N3.webp",
+        "SHA256": "cdf895e46951a9629f81a11e35735af2fec8b84d39b829d91ab0fc6225c6a830"
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_0_N3.webp",
+        "SHA256": "912ff5d78de688d88d9e5eaec2c81312cc5abca37b64d6cff64b8304d65d961e"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_1_N3.webp",
+        "SHA256": "17c9a4103edc03b625581baacb762994c9855f22922d423dbc4dde1b6d6ec019"
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 10,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 11,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_1_N3.webp",
+        "SHA256": "1419fbee7e3e3ff233c5797326e5be47dbe84192c364b756c98963346e2aff5d"
+      },
+      {
+        "x": 13,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_1_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 14,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_1_N3.webp",
+        "SHA256": "a413af77554934613dc599ad6fb238e56fd1c2ddac73f4ad673f5b1b7163cee7"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_2_N3.webp",
+        "SHA256": "b395582c53df10ab5e63b40b8311f43100663df62b7ec7ff90ac55ac8967673b"
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_1_N3.webp",
+        "SHA256": "91087bc1d38572ff4d1e52c7952bcc023dd1ab24b96e7863399ef73ef9507677"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_2_N3.webp",
+        "SHA256": "543d85605e1722a43cf1bd293b2baee17c007107833d52e80be7db221d35a8fe"
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_2_N3.webp",
+        "SHA256": "ca9f2fc47202e853ff4cf3793354621e558ac2fd643b7d73eccade92ae64bf4c"
+      },
+      {
+        "x": 10,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_2_N3.webp",
+        "SHA256": "1c5c83e0aac1ae40c42d004e350da631b2fd9b85e92c24549036bfc5dd5fb859"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_2_N3.webp",
+        "SHA256": "f37575f3ee9f0e8bb621ddbff7efe0e8a9827e0e667cd90a78b9556cb6671c2c"
+      },
+      {
+        "x": 11,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 12,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 13,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_2_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 14,
+        "y": 2,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_2_N3.webp",
+        "SHA256": "0e60825500d577eb55311b537be5b46e85b242900619e61755c3debe6d7e04cb"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_3_N3.webp",
+        "SHA256": "100dfed55735a82871a5e8c31ad025d737e18e2f58784ae907d73285e858e453"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_3_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_3_N3.webp",
+        "SHA256": "ce6cb16a70e21ce1f6b8d3ba042181bd4aa3316c1144e0077e0f3a0024bd05e2"
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_3_N3.webp",
+        "SHA256": "aa251eb5f96a901cca925465d8660b9024ec41c590175c4499fd079b9791b87b"
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_3_N3.webp",
+        "SHA256": "ef643058f9eeea6f8405af0506c1c19568eb4010fb38323eacad9117e62cf0c9"
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_3_N3.webp",
+        "SHA256": "6e57cb3482d52f8167e4301812bcda4a0a3b8c6081aa340372e82672a53dfd70"
+      },
+      {
+        "x": 11,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_3_N3.webp",
+        "SHA256": "c39c0f5bd18bd268361c6d33f87f2400d5f687c2deaf6911b4d3ee6681f6c4e4"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_3_N3.webp",
+        "SHA256": "7e97419815d245a1b5c420df253462f7e83e7d2c31bb55a82f79d9a51e1ada1f"
+      },
+      {
+        "x": 12,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_3_N3.webp",
+        "SHA256": "3b4188241ff3a64fb9f9a71dd629468bef0deae227fcadf996b214993d521625"
+      },
+      {
+        "x": 13,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_3_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 14,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_3_N3.webp",
+        "SHA256": "3663912629f00d0c4e5958a0e968bcb362e289e98c526df68de68d0525d63e44"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_4_N3.webp",
+        "SHA256": "9ed094c023a5315077794b31d8f5442ac699a1ca15618d8e1f4c277af7bd9b89"
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_3_N3.webp",
+        "SHA256": "3b62f67b78208570e88fa6079bd182796983dd9551be3e141c7c63aa3f85578f"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_4_N3.webp",
+        "SHA256": "24e088fbe71f7318f10e8fc615d46f0e2348c5c2b3239169e0cdd2a3c4049c4c"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_4_N3.webp",
+        "SHA256": "7c1fd1826375ad6974626b16e30f33fe534ecc58f90a5c2ab3606567829d43a6"
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_4_N3.webp",
+        "SHA256": "2e4890aa6fe198585472c22fbd323aea426dc072e6dca50f4092f72a90dd4156"
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_4_N3.webp",
+        "SHA256": "47b0a289dd42a2be3f84a5664f8ef58f2d1c88875fcfeb822b72212335902bd2"
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_4_N3.webp",
+        "SHA256": "ba1578e42658cdb722d173606c80ca23eec1dd852f5588e811bf9e664de4cecc"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_4_N3.webp",
+        "SHA256": "7ed5c99293f296eeb24aba72ec93e736b45c9b7ee5c948ac55d94680611e677a"
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_4_N3.webp",
+        "SHA256": "46f169c1aecbc00ba336a758b2529346456ddd2fbe3123dcac694df78dcb7608"
+      },
+      {
+        "x": 13,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_4_N3.webp",
+        "SHA256": "1735881a424e41c59da2625e5f60eab971c4842351fc77e7919121f30db7cf37"
+      },
+      {
+        "x": 12,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_4_N3.webp",
+        "SHA256": "8ba89e24c020ba2bde337ce75bc20bc94f5864caecceb39180d0abd881bf1da2"
+      },
+      {
+        "x": 11,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_4_N3.webp",
+        "SHA256": "21c17f46077f2995f2fb2054d2937046ff846c2e4acea6b05a1ee0ce9c6c0d96"
+      },
+      {
+        "x": 14,
+        "y": 4,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_4_N3.webp",
+        "SHA256": "a413af77554934613dc599ad6fb238e56fd1c2ddac73f4ad673f5b1b7163cee7"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_5_N3.webp",
+        "SHA256": "c665759c1270973d7a3c541be7945094b987159bb154d9a821a968035837cbf9"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_5_N3.webp",
+        "SHA256": "470b5b01ca95df89ca6dc4420a8d96398d2d453c5a25b70ffc14e99a190fa0ad"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_5_N3.webp",
+        "SHA256": "1ee397fa2a28779110f6b673daed22272f25ccffadbdeb3f93b6320f526c34ed"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_5_N3.webp",
+        "SHA256": "806c5861f7f191c5930385d625b4b527d546da5dac7e4ea1b6b24fb35f6f6005"
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_5_N3.webp",
+        "SHA256": "dae650544028127e91db67bf24ac6f17a99ef8d3b8fd80dacfe3227353438a3e"
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_5_N3.webp",
+        "SHA256": "2b02c039c34f104aa31ca4afe1239701e536860cdd8425ec6b74152e30a20e06"
+      },
+      {
+        "x": 12,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_5_N3.webp",
+        "SHA256": "19db9120b6dce59f5761cd86246a77809834a013cd51481937e505565e06b143"
+      },
+      {
+        "x": 13,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_5_N3.webp",
+        "SHA256": "cea381deffc04f2d045ebc6a7b6181f7956d98d3dcd4b899f4d060fb6907e0a5"
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_5_N3.webp",
+        "SHA256": "066b65346060424ea8baa67f0d84023fefb81b4942151cf1ac1eafa27faf1268"
+      },
+      {
+        "x": 11,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_5_N3.webp",
+        "SHA256": "0a7ccbef39f5564406da7d8e61a7a7e1bb64ee710b06c116431995a7a4b3eec5"
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_5_N3.webp",
+        "SHA256": "c04a64c4468ce2a0abd5c722391d627dcdbc08c84c84f403f4346ebdd2f1c9f0"
+      },
+      {
+        "x": 14,
+        "y": 5,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_5_N3.webp",
+        "SHA256": "e3310b3b7ab31b1c4ed5ab5b35afdbc1043942eb7f30061ffe6ccec40fd49659"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_6_N3.webp",
+        "SHA256": "8effb90a19c97edd1afaaf9505b201abb1a3de51d78c2c5e39ab38d33379cbed"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_6_N3.webp",
+        "SHA256": "03189976662eca4651d60a0d8dc9451738777c561a052c88aa5e8c5dbff45212"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_6_N3.webp",
+        "SHA256": "b461656825a1ed299dc176db58201adb4019ff9d4f58c4346f224dd3443a8637"
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_6_N3.webp",
+        "SHA256": "8e9f532b464c9ffb7332b595c30669c7e2c1a9c5c9e2adc33ede212525f79d9d"
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_6_N3.webp",
+        "SHA256": "af2a9ba53eff4e669e749219d5624066bd854efd21f81bb174a3854b051f72a1"
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_6_N3.webp",
+        "SHA256": "adee3ab846bd4b7196cf569b648b08c4f91fdfdbbea44b06710a75660be2f615"
+      },
+      {
+        "x": 11,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_6_N3.webp",
+        "SHA256": "db23e7259873dcf39f788d333208364320449b07bfbe2a2cc4039bdb8d6f714a"
+      },
+      {
+        "x": 10,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_6_N3.webp",
+        "SHA256": "4e513ad7b8994358c5f0af561066c44d0f4c6eaa16c2382c8601f7e16a239eb4"
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_6_N3.webp",
+        "SHA256": "94cad7984c9d13c3dae7ac6e530d00c9941b300809f04cd84bf5298d157f7434"
+      },
+      {
+        "x": 12,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_6_N3.webp",
+        "SHA256": "609c39225a16f382eb768a612e2c0593ccaea403a527124635a9273747201744"
+      },
+      {
+        "x": 14,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_6_N3.webp",
+        "SHA256": "d5f7857355c385ce59ebd0d98d91b16c61c2a6067b475bc791c80d62f937619d"
+      },
+      {
+        "x": 13,
+        "y": 6,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_6_N3.webp",
+        "SHA256": "a4a516e8f74818f95e8c7de1bccb9321cffb30e87c84b1ea6a4493556b8ee46f"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_7_N3.webp",
+        "SHA256": "643cccbac38ecf8f3ce9ddd59f23dfea016697c7983bf6d976ada4f159c058fa"
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_7_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_7_N3.webp",
+        "SHA256": "181edce3ef8df38a48e43cdb91e938297ef81888425bb8ade59bae6af0507e57"
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_7_N3.webp",
+        "SHA256": "36e5d7cd25c68c4c54103184fa10fb6d33531df06116412f91983e424905ae00"
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_7_N3.webp",
+        "SHA256": "dd0212232b8199a2c85a68a43a5a4e17c5f6693831375aa339b525c06b470a34"
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_7_N3.webp",
+        "SHA256": "07b0839adf3383b47eae9b05be84ff2dbe48b3551f6fbb81769da33a3957b659"
+      },
+      {
+        "x": 10,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_7_N3.webp",
+        "SHA256": "e24462e42adf680a54c1d551112f54c76a3859c8aec07184b5c54acd36aebc7a"
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_7_N3.webp",
+        "SHA256": "58315a365f42d29097c8c7886ebb686a259ebdd0829966db4795bf64c71a9d07"
+      },
+      {
+        "x": 11,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_7_N3.webp",
+        "SHA256": "13ac6b05a77088320be22947801f5ff0c315a2cad6013b4c33117ae29bf8848a"
+      },
+      {
+        "x": 12,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_7_N3.webp",
+        "SHA256": "331ee1cd2fb0757e29e854871aa57999482411224949f1023e3179b601bb6996"
+      },
+      {
+        "x": 14,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_7_N3.webp",
+        "SHA256": "f04b3df45399c39c15da31536c6036688f1e9179eeffa9f00e35aee918dc7a11"
+      },
+      {
+        "x": 13,
+        "y": 7,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_7_N3.webp",
+        "SHA256": "03c78651f13385f577c8fa2ad697c74d5f6b7147bf9b5aa178cf5d52fd536902"
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/3_8_N3.webp",
+        "SHA256": "a843afe5183ac0bd47ccbcd2273221b8bd188e4e93c41e07b3789bb2e32f1805"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/4_8_N3.webp",
+        "SHA256": "a1c02ba35998e7125812ec49be174d300787c9cdc95a2bdd4ea653e21fe96871"
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/5_8_N3.webp",
+        "SHA256": "93217a86b4420891f3e41a12af3ff3c05b0bdf084491169ce635bc1a9e198647"
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/6_8_N3.webp",
+        "SHA256": "70ee6d636147afcffee2005b677c8d525925f8435e382631f841d98cfb9db98f"
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/8_8_N3.webp",
+        "SHA256": "93217a86b4420891f3e41a12af3ff3c05b0bdf084491169ce635bc1a9e198647"
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/7_8_N3.webp",
+        "SHA256": "a1c02ba35998e7125812ec49be174d300787c9cdc95a2bdd4ea653e21fe96871"
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/9_8_N3.webp",
+        "SHA256": "70ee6d636147afcffee2005b677c8d525925f8435e382631f841d98cfb9db98f"
+      },
+      {
+        "x": 10,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/10_8_N3.webp",
+        "SHA256": "a1c02ba35998e7125812ec49be174d300787c9cdc95a2bdd4ea653e21fe96871"
+      },
+      {
+        "x": 11,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/11_8_N3.webp",
+        "SHA256": "93217a86b4420891f3e41a12af3ff3c05b0bdf084491169ce635bc1a9e198647"
+      },
+      {
+        "x": 12,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/12_8_N3.webp",
+        "SHA256": "2d43b2a430ecbf53aab9d260122b228217347a25ddde1d9099933cd1eb1a44fb"
+      },
+      {
+        "x": 13,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/13_8_N3.webp",
+        "SHA256": "a058d08c97dc0ad2a70b615d3fa677bb07ba648c3647b00b45fd03aef0181d20"
+      },
+      {
+        "x": 14,
+        "y": 8,
+        "url": "https://act-webstatic.hoyoverse.com/map_manage/map/2/eea752b746ae1f2e0c1988a574f2b7b0/14_8_N3.webp",
+        "SHA256": "e516db3e333267351578238b662ce00edd0ff2c4d57af34d65bc750388bd5ff3"
+      }
+    ]
+  },
+  "images": [
+    {
+      "nation": "mondstadt",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-mondstadt-crest.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200319/2020031918573764353.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=0",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "962450093515066e597a8d9b2f7aa1447a05b0f0ab241007b9a47484e415a3da",
+      "SHA256": "e96c6541cc11b16a963f281c7747db388e1602d961a223f319cf60a9ed7103dc"
+    },
+    {
+      "nation": "mondstadt",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-mondstadt-cover.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200320/2020032014410864090.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=0",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "8e3fb82232db05d76266621cb6ceafb63960d6bcbb7f298d748ae737c3da7ba9",
+      "SHA256": "6a1a255bf67a982a062f99a89c8d00f92486a58e01c9856bcc092d48e6d1dcc7"
+    },
+    {
+      "nation": "mondstadt",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-mondstadt-scene-1.webp",
+      "url": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311461397057.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=0",
+      "width": 639,
+      "height": 355,
+      "originalSHA256": "411070834d641ab9043c9173e2795e98350512921002ddb96971125c77887e57",
+      "SHA256": "7504e9272d440fabfe1c7f706a4d43fe00309a2fb97bb84086c21cb383af461b"
+    },
+    {
+      "nation": "mondstadt",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-mondstadt-scene-2.webp",
+      "url": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311462187517.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=0",
+      "width": 639,
+      "height": 355,
+      "originalSHA256": "f818b975856d09e0058def88b47f76d27f2686d4071c4f8f9562e71de7053943",
+      "SHA256": "c39d2be3737c8dbbe853702cd4d59af7d1a9d3171b62e5f3f433da639abdea73"
+    },
+    {
+      "nation": "mondstadt",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-mondstadt-scene-3.webp",
+      "url": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311463354982.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=0",
+      "width": 639,
+      "height": 355,
+      "originalSHA256": "b02eed918b19500d87e3c285f0828cea991bd40329e5ba6fc4de5c3a06da7757",
+      "SHA256": "eb0f3e8e3deb9bf8465d43997d236964557bd4cb19bd45d854c611fdae3b258d"
+    },
+    {
+      "nation": "liyue",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-liyue-crest.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200319/2020031921033557909.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=1",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "1025b596f5a039f0653b6bc704f9c678a0072e0d67bdb9c825783c8854f926d3",
+      "SHA256": "cbfbb6f21eafeb7d9937191af14cded2a34ec448b4d2a447bb396b9884ed7858"
+    },
+    {
+      "nation": "liyue",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-liyue-cover.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200320/2020032014541768485.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=1",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "d8f5ab7868b8cfbb3a25ffadbfcaf3b9f8b1f46cae23f5823cb6a9a2c4cd810a",
+      "SHA256": "f57e3294e9cedd6a715d01574601c10ac8be455a30c167249446423441db2aaa"
+    },
+    {
+      "nation": "liyue",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-liyue-scene-1.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920024554488.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=1",
+      "width": 1562,
+      "height": 916,
+      "originalSHA256": "dcdff85bac59f355eaf769ffa8a1ff4cdd81d5c7cc30a73ac78c8c16b337e975",
+      "SHA256": "bc0a3993411abd53d792d09c9210f08e3f43442842fbfc918219f270a398c4fd"
+    },
+    {
+      "nation": "liyue",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-liyue-scene-2.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920005039313.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=1",
+      "width": 639,
+      "height": 355,
+      "originalSHA256": "af6d614a46609bb1b3a318ab292e414a031f13b7d7106c00f3acd8ee130867bb",
+      "SHA256": "19762a9e2b1a7b9095715852338754afc82d73b126b484e298cb20fa7f39c0a4"
+    },
+    {
+      "nation": "liyue",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-liyue-scene-3.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920010032260.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=1",
+      "width": 639,
+      "height": 355,
+      "originalSHA256": "8d2771db1e6492a144c72f83b0fbf3ca8823865eacedd5c503cda338fe8a5a17",
+      "SHA256": "52c9ae4ad0d2f83412827cafd2695214caa6fb1c754b4570688208cc3fc731df"
+    },
+    {
+      "nation": "inazuma",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-inazuma-crest.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071618595355993.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=2",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "75120cabe858d4164a15b0947b73fde5fdc57057be986f78a67189ea8cceaf12",
+      "SHA256": "0d176e75e17458c7a4f431456810ac12ba491e6349910f2ea6b2b807d135c852"
+    },
+    {
+      "nation": "inazuma",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-inazuma-cover.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210719/2021071920203256336.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=2",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "65f77dbcdfae37af0cb44b5913e4ce2fbcb6abf692b084a5ae3923c89ad8d3ad",
+      "SHA256": "45061dede6c9110938034939d69109619f374e48d0194679feec192c81cbe84b"
+    },
+    {
+      "nation": "inazuma",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-inazuma-scene-1.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619015166388.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=2",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "f27be8f1de872a05bc1ba61e95876a9838394db0e592f35678351c4dfca958bf",
+      "SHA256": "3476a7b3fa8c8b7515f5d212cff8badee05b73a00ea47ce077ef36a7558a4fbc"
+    },
+    {
+      "nation": "inazuma",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-inazuma-scene-2.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619022571627.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=2",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "2f042f747578e0157f07c925449a33ada4b74e327eef5b154a256a722bc0de95",
+      "SHA256": "1436aea5d73c7c46345d1293582ed56233787b0c32cecb38c57b5321d4071137"
+    },
+    {
+      "nation": "inazuma",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-inazuma-scene-3.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619023818196.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=2",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "7dcdcf807af30951ed3118b14e87eb85058fd52bc70a0fabfe175ddf93e708aa",
+      "SHA256": "f51c437abc1c9679c2d57c56fb5fd0f91ca3b3e21cbfc4aa1a4834bf88dd8f34"
+    },
+    {
+      "nation": "sumeru",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-sumeru-crest.webp",
+      "url": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/f77d0c308b54728b6a1f3bc525e42955_1063974383729558189.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=3",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "1963e10578e950dec67b6337a35355731fca42c2c0a343f33a6703b9d53d571e",
+      "SHA256": "2ebdd9a8641add7d93a0421d06cfcecdc293ebc9d396cf1d0a6690ff5dc8ce44"
+    },
+    {
+      "nation": "sumeru",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-sumeru-cover.webp",
+      "url": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/8969f683b92839ac427c875d0d742be2_4596868760376591695.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=3",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "048cec0eb4cb3f7621cc609bbeac7c4381fb6fa8a934d9ffd00fb4c2dbd9b532",
+      "SHA256": "35c86760dd3502bdff3bd81db0c341e4fd531a9d289e6e5226687c3b4984e3b5"
+    },
+    {
+      "nation": "sumeru",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-sumeru-scene-1.webp",
+      "url": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/68de4c67d6c08495aaa8cab9db2c3129_2534580751654510538.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=3",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "0b062088ba530ef0b2575bfe09cb782749ff36b204d0572c2cdff95f101be691",
+      "SHA256": "6a06e984fcd3ae1d062e0b0e62d0fc001dcf6041fbcffce2553ff20cdf93d2eb"
+    },
+    {
+      "nation": "sumeru",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-sumeru-scene-2.webp",
+      "url": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/6f9a5a8a10a5c9783b4a56339144eb4f_2397078545900004331.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=3",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "34daea64e09a1dab48524dfd3ba33cd7868ff5a70100262b151099e5eb19c8c7",
+      "SHA256": "d2b41ff12df877909d8a6288df88d7ee8b01d29a72640fbd48a7b6136ee7884d"
+    },
+    {
+      "nation": "sumeru",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-sumeru-scene-3.webp",
+      "url": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/de1686c7e77653fc820ef97b2e1d6ecc_4235947811467035450.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=3",
+      "width": 640,
+      "height": 355,
+      "originalSHA256": "9869873aad2d5e06246e90d43ecaa295d5bf2566f2627a8e288711baedbd5a54",
+      "SHA256": "9e9bc69ff85213328437b3859ad4ebdbec22586c1735743075351f2ed2bf2752"
+    },
+    {
+      "nation": "fontaine",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-fontaine-crest.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/10/4f32dd59ce1ed2f07d20f79fc64a358c_6481188169214364264.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=4",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "eac9cb880b9dabba414cd125f5ac31021f495ac65ac465254d089b29381d1a5f",
+      "SHA256": "1a913dcc853a0c3fa86c921724f11ff54a7341ad3a744d5783fb5988b6783bfe"
+    },
+    {
+      "nation": "fontaine",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-fontaine-cover.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/10/721a74c43614d7aeb25b046cabfb57be_2232465004168336408.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=4",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "5a596ba5f6ee29340e00e2c5e2e5d474bc596ba5306039e0a41fe225421b1e10",
+      "SHA256": "90e3447c8293cccd9939fc08a6ea827b43f2c5748f6ff14d7668985efe7baa3c"
+    },
+    {
+      "nation": "fontaine",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-fontaine-scene-1.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/fd9a8e0c453010fb28594abd0ba868ea_812176858252732462.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=4",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "294fd90553de375498726a599572d466cfe02b6e967e779a70585e8149a67346",
+      "SHA256": "2edb680086071100f4ed30c8a5384cccc75099fa39616895004ba33372d7123d"
+    },
+    {
+      "nation": "fontaine",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-fontaine-scene-2.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/467960f89cfeb38556040e7ca5d7c168_1026920932186304365.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=4",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "3b3fa9b1d3765b3bed542a29c9961eedc31aa0e0a1f53b19b794ccaa42933742",
+      "SHA256": "3388418386818d488fd02feb5970872fc1b9966183c3a8854cf93d6de7433f7c"
+    },
+    {
+      "nation": "fontaine",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-fontaine-scene-3.webp",
+      "url": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/54b391e68d6dddf262051412dbda4593_9105979803753997228.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=4",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "4851a41ff1d05bdde0b7192183bd2d0e37f1e89c5856641dd0a8247edf67f121",
+      "SHA256": "c6e5f3563312d3d7b62021cf8d0e9fcb61946a50cd71f4fad047d2c808e98e40"
+    },
+    {
+      "nation": "natlan",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-natlan-crest.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/d1b8a99bd52958f9550432504819db85_273180170429996290.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=5",
+      "width": 180,
+      "height": 180,
+      "originalSHA256": "50d6230872f836ff30ce5290942a024f87cce7878dde482fcfa3abf135cb867f",
+      "SHA256": "08cdcab3972cd9d50b20157f9f9d83a86235ca539e8c9407f2ce515bdde75f02"
+    },
+    {
+      "nation": "natlan",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-natlan-cover.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/b86e153b41b5106f287d7bcb0e801a14_787934890696876766.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=5",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "1f3c4f7afd9cf7a6d28f83578dad00c6d30e166357766513096cc3a9ebce817d",
+      "SHA256": "6f11120b90517979116f47f347e644e4d0a906407e0439fabb6d6ec1b963fcea"
+    },
+    {
+      "nation": "natlan",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-natlan-scene-1.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/7bd69431d390fe8a4ebc72db2fd46cc0_8343194283762831562.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=5",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "cefbd45586d60ba80b6ceb4a4510a9a1f2d247b1e2006acaf314c28b16f226c0",
+      "SHA256": "dd6431bd057350743be56a8ddd68ce27935a903ac233912364d1906e14e1bdbd"
+    },
+    {
+      "nation": "natlan",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-natlan-scene-2.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/47c5f381afcdec37b72653c88c556514_3318722355411180696.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=5",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "e1427c5cb6473742ee42e9132a6ad02213c8418bbe46a9626d601865995d6d06",
+      "SHA256": "2ee1f81d4ab084ae5ff3118db15f9e3cbc833468f4e3f5b38deacd644e48ff61"
+    },
+    {
+      "nation": "natlan",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-natlan-scene-3.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/49776661a4084ff4ac9281d01bf5e753_276805627587217132.jpg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=5",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "4777d1310965e16f5a141bdc8bb506adc81c9aee774786a582d6e6ebee095c8e",
+      "SHA256": "fc70dee4cd6fd269cd8a04d04d84385567e11e0aab0400a60d3affc05abf138a"
+    },
+    {
+      "nation": "snezhnaya",
+      "kind": "crest",
+      "file": "/images/artworks/teyvat-snezhnaya-crest.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/05b3bf1a72730e1204e347afcf74d5df_8625034156488398724.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "width": 180,
+      "height": 183,
+      "originalSHA256": "7cfa34dad3dd17ffa9ab3123fe6cd87a5dabdb6905efbdbef0012f0173d0ccb5",
+      "SHA256": "39f1594744cd68fe95ecbd03e55a8d5f388a4324cf974987fd140f8a1396e6d7"
+    },
+    {
+      "nation": "snezhnaya",
+      "kind": "cover",
+      "file": "/images/artworks/teyvat-snezhnaya-cover.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/0ebacdac20e0a8590b8f04d2c5534975_7939445415112496467.jpeg",
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "0286fd759895d301949556d6eeaa3c6bda921800ad9ffb350bb2ea0b3d13991c",
+      "SHA256": "717478dc5c381b0112a09cc8f9c6a3079a4b22c000b9993d40ec1b1d3fb4b65d"
+    },
+    {
+      "nation": "snezhnaya",
+      "kind": "scene-1",
+      "file": "/images/artworks/teyvat-snezhnaya-scene-1.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/28fc0f6bce2539262ede83d8be5af049_2176264054255711717.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "bceb16e6164ddb3fcfed20bf96eabd26b71e518067784d153de77b27835fa42a",
+      "SHA256": "d617083d65a42a64798787f476c046996004baa8b5a6475ee9f39f5673fde7ad"
+    },
+    {
+      "nation": "snezhnaya",
+      "kind": "scene-2",
+      "file": "/images/artworks/teyvat-snezhnaya-scene-2.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/e64fb43383068586a8d664e39e3624dc_7185022946082735623.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "b4f699c3415791c86a20e6bfd67a8b2924de9f51c80e9b4db43d3597f5678e9e",
+      "SHA256": "bce5598364ea284325c8aadf50ca1aee26fb1b721d5bcd1f13bf00d26b028240"
+    },
+    {
+      "nation": "snezhnaya",
+      "kind": "scene-3",
+      "file": "/images/artworks/teyvat-snezhnaya-scene-3.webp",
+      "url": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/f39615c4283acfdc84c22102ae6c9289_7810120138976326795.png",
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "width": 1920,
+      "height": 1080,
+      "originalSHA256": "17b7e682a0951b10404b3c6037c242ea5ee434452b61d519a4db5c164a1485a5",
+      "SHA256": "10379ea36ffad41420a7063286570ddb31dc730828e7fbe3ce77988ffb9cb076"
+    },
+    {
+      "nation": "nod-krai",
+      "kind": "cover",
+      "src": "/images/artworks/teyvat-nod-krai-cover.webp",
+      "width": 1920,
+      "height": 1080,
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/ba6076b65f702f3d3d0f12f302a95c5c_3928880897739121554.png",
+      "originalSHA256": "b1f8c09b0c2611f0d1c1153200df4c51a2eb511c8931f4687ff8f63c3b5b9693",
+      "SHA256": "44558883f5ecd18a174fb8044870d995a3b504ace2b81171d4983459a3d890eb"
+    },
+    {
+      "nation": "nod-krai",
+      "kind": "scene-1",
+      "src": "/images/artworks/teyvat-nod-krai-scene-1.webp",
+      "width": 1598,
+      "height": 893,
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/4a5f80299681d3771223718850e1580f_6016688013675250249.png",
+      "originalSHA256": "b5bfb08c07943cc84e54d9b60c2810f204a032c69626ff70c4918288ce68472d",
+      "SHA256": "ce3c473ee7a40adc839d59289360eb3fdbffb04530f514d4374f9defb1866c90"
+    },
+    {
+      "nation": "nod-krai",
+      "kind": "scene-2",
+      "src": "/images/artworks/teyvat-nod-krai-scene-2.webp",
+      "width": 1593,
+      "height": 891,
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/e54c3ad93a51cbba384cec89c083e573_2656465063953217200.png",
+      "originalSHA256": "008b08b2b36140edecff99b1f8f6626c831112808761d1f32d7e4eb59cbc6731",
+      "SHA256": "090ec2d93dd6b1c96ccf1f89cf0d81de168ed9ad932c4a8c6edd421780d2fe4d"
+    },
+    {
+      "nation": "nod-krai",
+      "kind": "scene-3",
+      "src": "/images/artworks/teyvat-nod-krai-scene-3.webp",
+      "width": 1920,
+      "height": 958,
+      "source": "https://genshin.hoyoverse.com/en/map?region=6",
+      "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/d546a6006c42aebce823dc4922b05cd6_8593949638180330310.png",
+      "originalSHA256": "5502944ba2a2a23599c2d971ea8c0400b6367aa1b6f2cafcc8fc971c8e08c786",
+      "SHA256": "d64db397dcddeb60cee1d597ab4ecc55a1ab6c7d2a0938069af63c289e0ec052"
+    },
+    {
+      "nation": "nod-krai",
+      "kind": "crest",
+      "src": "/images/artworks/teyvat-nod-krai-crest.svg",
+      "width": 160,
+      "height": 160,
+      "source": "https://muruiwen.cn/teyvat/nod-krai",
+      "original": "",
+      "owner": "Murui — original moon ornament",
+      "SHA256": "c1109b32eff918fea480fe152895b0f8639dc0f04c9466d3c403d735cdcabfbe"
+    }
+  ],
+  "music": [
+    {
+      "nation": "mondstadt",
+      "id": "1455707352",
+      "title": "蒙德的一日 A Day in Mondstadt",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-风与异乡人 Le Vent et les Enfants des étoiles",
+      "cover": "https://p1.music.126.net/Ww8vFazA3y8UhREv7G9Urg==/109951165065099945.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1455707352.mp3",
+      "source": "https://music.163.com/#/song?id=1455707352",
+      "duration": 59750
+    },
+    {
+      "nation": "mondstadt",
+      "id": "1481392257",
+      "title": "蒙德的黄昏 Dusk in Mondstadt",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-风与牧歌之城 City of Winds and Idylls",
+      "cover": "https://p1.music.126.net/odoWDzYyHAe-IzLzRxkg3Q==/109951165336802038.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1481392257.mp3",
+      "source": "https://music.163.com/#/song?id=1481392257",
+      "duration": 108770
+    },
+    {
+      "nation": "liyue",
+      "id": "1492276411",
+      "title": "璃月 Liyue",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-皎月云间之梦 Jade Moon Upon a Sea of Clouds",
+      "cover": "https://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1492276411.mp3",
+      "source": "https://music.163.com/#/song?id=1492276411",
+      "duration": 276250
+    },
+    {
+      "nation": "liyue",
+      "id": "1492276426",
+      "title": "杯中明月 Moon in One's Cup",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-皎月云间之梦 Jade Moon Upon a Sea of Clouds",
+      "cover": "https://p1.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1492276426.mp3",
+      "source": "https://music.163.com/#/song?id=1492276426",
+      "duration": 117421
+    },
+    {
+      "nation": "inazuma",
+      "id": "1879098378",
+      "title": "稻妻 Inazuma",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-寂远无妄之国 Realm of Tranquil Eternity",
+      "cover": "https://p1.music.126.net/ZephLxkqnVSKXu-pqOZB_g==/109951166426734854.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1879098378.mp3",
+      "source": "https://music.163.com/#/song?id=1879098378",
+      "duration": 329773
+    },
+    {
+      "nation": "inazuma",
+      "id": "1879108675",
+      "title": "华散之缘 Hanachirusato",
+      "artist": "陈致逸 / HOYO-MiX",
+      "album": "原神-寂远无妄之国 Realm of Tranquil Eternity",
+      "cover": "https://p2.music.126.net/ZephLxkqnVSKXu-pqOZB_g==/109951166426734854.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1879108675.mp3",
+      "source": "https://music.163.com/#/song?id=1879108675",
+      "duration": 94066
+    },
+    {
+      "nation": "sumeru",
+      "id": "1992141905",
+      "title": "须弥 Sumeru",
+      "artist": "HOYO-MiX",
+      "album": "原神-智妙明论之林 Forest of Jnana and Vidya",
+      "cover": "https://p2.music.126.net/mi40R92CSJ6zeroCvLxQQA==/109951167997564898.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1992141905.mp3",
+      "source": "https://music.163.com/#/song?id=1992141905",
+      "duration": 285160
+    },
+    {
+      "nation": "sumeru",
+      "id": "1992141906",
+      "title": "几初的智愿 For Riddles, for Wonders",
+      "artist": "HOYO-MiX",
+      "album": "原神-智妙明论之林 Forest of Jnana and Vidya",
+      "cover": "https://p1.music.126.net/mi40R92CSJ6zeroCvLxQQA==/109951167997564898.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=1992141906.mp3",
+      "source": "https://music.163.com/#/song?id=1992141906",
+      "duration": 134426
+    },
+    {
+      "nation": "fontaine",
+      "id": "2085833516",
+      "title": "枫丹 Fontaine",
+      "artist": "HOYO-MiX",
+      "album": "原神-白露澈明之泉 Fountain of Belleau",
+      "cover": "https://p2.music.126.net/Y8DlFQ7xFYbVclVBxQzsSA==/109951168945012044.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=2085833516.mp3",
+      "source": "https://music.163.com/#/song?id=2085833516",
+      "duration": 273360
+    },
+    {
+      "nation": "fontaine",
+      "id": "2085833517",
+      "title": "时暮的思眷 Le Souvenir avec le crepuscule",
+      "artist": "HOYO-MiX",
+      "album": "原神-白露澈明之泉 Fountain of Belleau",
+      "cover": "https://p1.music.126.net/Y8DlFQ7xFYbVclVBxQzsSA==/109951168945012044.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=2085833517.mp3",
+      "source": "https://music.163.com/#/song?id=2085833517",
+      "duration": 90666
+    },
+    {
+      "nation": "natlan",
+      "id": "2635292773",
+      "title": "纳塔 Natlan",
+      "artist": "HOYO-MiX",
+      "album": "原神-炽炎交逐之原 Land of Tleyaoyotl",
+      "cover": "https://p1.music.126.net/DTUwP3lY4oiwd8AM1um_kQ==/109951170031752778.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=2635292773.mp3",
+      "source": "https://music.163.com/#/song?id=2635292773",
+      "duration": 284768
+    },
+    {
+      "nation": "natlan",
+      "id": "2635292812",
+      "title": "苍原的颂灵歌 Anthem of the Savannah",
+      "artist": "HOYO-MiX",
+      "album": "原神-炽炎交逐之原 Land of Tleyaoyotl",
+      "cover": "https://p2.music.126.net/DTUwP3lY4oiwd8AM1um_kQ==/109951170031752778.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=2635292812.mp3",
+      "source": "https://music.163.com/#/song?id=2635292812",
+      "duration": 251724
+    },
+    {
+      "nation": "snezhnaya",
+      "id": "3437729502",
+      "title": "至冬 Snezhnaya",
+      "artist": "HOYO-MiX",
+      "album": "原神-悯宥慈怜之垠 Where Mercy Endures",
+      "cover": "https://p1.music.126.net/330QHr0gdVzDm41ecd0RJw==/109951173956314131.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=3437729502.mp3",
+      "source": "https://music.163.com/#/song?id=3437729502",
+      "duration": 299491
+    },
+    {
+      "nation": "snezhnaya",
+      "id": "3437729507",
+      "title": "琴弦呀，琴弦 O Strings, My Strings",
+      "artist": "HOYO-MiX",
+      "album": "原神-悯宥慈怜之垠 Where Mercy Endures",
+      "cover": "https://p2.music.126.net/330QHr0gdVzDm41ecd0RJw==/109951173956314131.jpg",
+      "src": "https://music.163.com/song/media/outer/url?id=3437729507.mp3",
+      "source": "https://music.163.com/#/song?id=3437729507",
+      "duration": 180000
+    },
+    {
+      "nation": "nod-krai",
+      "id": "netease-2756019200",
+      "title": "挪德卡莱 Nod-Krai",
+      "artist": "AURORA / HOYO-MiX",
+      "src": "https://music.163.com/song/media/outer/url?id=2756019200.mp3",
+      "source": "https://music.163.com/#/song?id=2756019200",
+      "cover": "https://p2.music.126.net/JSLtNdDEdVOHtmh64LOoAg==/109951172156847671.jpg",
+      "album": "原神-幽暮衬映之月 Outside It Is Growing Dark",
+      "provider": "netease",
+      "instrumental": false,
+      "hasTimedLyrics": true
+    },
+    {
+      "nation": "nod-krai",
+      "id": "netease-2756019215",
+      "title": "新月的摇篮曲（其一）：伴月同眠 Lullaby of the New Moon (I): Somnias a Luna",
+      "artist": "HOYO-MiX",
+      "src": "https://music.163.com/song/media/outer/url?id=2756019215.mp3",
+      "source": "https://music.163.com/#/song?id=2756019215",
+      "cover": "https://p1.music.126.net/JSLtNdDEdVOHtmh64LOoAg==/109951172156847671.jpg",
+      "album": "原神-幽暮衬映之月 Outside It Is Growing Dark",
+      "provider": "netease",
+      "instrumental": false,
+      "hasTimedLyrics": true
+    }
+  ],
+  "nodKrai": "A separate travel destination within Snezhnaya, not an eighth nation. Scenery comes from the official world page Nod-Krai section; moon ornament is original Murui SVG."
+}

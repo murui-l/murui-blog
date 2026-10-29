@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import {getPayload} from "payload";
+import config from "../src/payload.config";
+if(process.env.TURSO_URL||process.env.DATABASE_URL!=="file:payload-local.db")throw new Error("Use the disposable local test database");
+const p=await getPayload({config});
+const a=await p.create({collection:"posts",draft:true,data:{}});
+const b=await p.create({collection:"posts",draft:true,data:{}});
+assert.notEqual(a.slug,b.slug);assert.match(a.slug!,/^draft-/);
+const updated=await p.update({collection:"posts",id:a.id,draft:true,data:{title:"草稿链接测试"}});
+assert.equal(updated.slug,"草稿链接测试");
+await p.delete({collection:"posts",id:a.id});await p.delete({collection:"posts",id:b.id});
+console.log("Empty drafts have unique URLs; entering a title generates the article URL.");await p.destroy();process.exit(0);

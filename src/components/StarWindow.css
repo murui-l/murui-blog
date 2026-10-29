@@ -1,0 +1,6 @@
+.homepage-music{position:relative;isolation:isolate;overflow:hidden}
+.homepage-music .hm-radio-starlight{position:absolute;inset:0;z-index:-1;overflow:hidden;border-radius:inherit;pointer-events:none;user-select:none}
+.homepage-music .hm-radio-stars-canvas,.homepage-music .hm-radio-stars-static{position:absolute;inset:0;pointer-events:none}
+.homepage-music .hm-radio-stars-canvas canvas{display:block;width:100%!important;height:100%!important;pointer-events:none!important}
+.homepage-music .hm-radio-stars-static>span{position:absolute;color:#b292c2;font-size:14px;opacity:.25}
+@media(prefers-reduced-motion:reduce){.homepage-music .hm-radio-stars-canvas{visibility:hidden}}

@@ -1,0 +1,33 @@
+.life-notes { position: relative; margin: 0 0 36px; padding: 34px; border: 1px solid #e6dfe9; border-radius: 22px; background: radial-gradient(ellipse at 100% 0,#f9e8ef88,transparent 55%),linear-gradient(125deg,#fffdf8,#f7f6fd); color: #655c73; scroll-margin-top: 28px; }
+.life-notes-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 25px; }
+.life-notes-kicker { margin: 0 0 10px; color: #9a829a; font-size: 10px; letter-spacing: .13em; line-height: 1.7; }
+.life-notes-kicker > span { color: #c59ab2; font-size: 16px; margin-right: 6px; }
+.life-notes h1,.life-notes h2 { margin: 0; color: #5d526d; font-size: 36px; font-weight: 600; line-height: 1.4; }
+.life-notes h1 > span,.life-notes h2 > span { color: #d49bb5; }
+.life-notes-description { margin: 12px 0 0; color: #8b7e94; font-size: 13px; line-height: 1.9; }
+.life-notes-mark { display: flex; flex-direction: column; align-items: center; gap: 12px; flex-shrink: 0; color: #bba0b9; padding: 10px 20px; }
+.life-notes-mark > span { font-size: 11px; letter-spacing: .1em; }
+.life-notes-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.life-notes-card { min-width: 0; border: 1px solid #ebe4e9; border-radius: 13px; background: #ffffffc9; }
+.life-notes-card > a { display: flex; flex-direction: column; height: 100%; padding: 23px; color: inherit; text-decoration: none; }
+.life-notes-card:hover { border-color: #cbb9d2; background: #fff; }
+.life-notes-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #9b8e9f; font-size: 11px; }
+.life-notes-meta > span { color: #cbb9cc; font-family: Georgia,serif; font-size: 23px; }
+.life-notes-card h3 { margin: 18px 0 10px; color: #61536e; font-size: 19px; line-height: 1.65; overflow-wrap: anywhere; }
+.life-notes-card p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin: 0 0 24px; font-size: 13px; line-height: 1.95; color: #8d8094; overflow-wrap: anywhere; }
+.life-notes-read { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; color: #957997; font-size: 12px; }
+.life-notes-empty { display: flex; align-items: center; justify-content: center; gap: 48px; min-height: 230px; padding: 30px; border: 1px dashed #e0d5e2; border-radius: 14px; background: #ffffff85; }
+.life-notes-paper { position: relative; width: 155px; height: 167px; flex-shrink: 0; padding: 24px 20px; border: 1px solid #e8dfe4; border-radius: 4px 15px 15px 4px; background: #fffdf8; box-shadow: 5px 6px 0 #f0e8ed; transform: rotate(-5deg); }
+.life-notes-paper > span { display: block; color: #b399a6; font: italic 18px Georgia,serif; margin-bottom: 20px; }
+.life-notes-paper i { display: block; margin-top: 12px; border-top: 1px solid #e9e1e6; }
+.life-notes-paper b { position: absolute; right: 20px; bottom: 12px; color: #cf9fb8; font-size: 25px; font-weight: 400; }
+.life-notes-empty-label { color: #af93a6; font-size: 11px; letter-spacing: .08em; }
+.life-notes-empty h3 { margin: 12px 0; color: #6a5a77; font-size: 25px; font-weight: 500; }
+.life-notes-empty p { margin: 0; color: #9a8c9e; font-size: 13px; line-height: 2; }
+.life-notes-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; padding-top: 23px; color: #a091a4; font-size: 11px; }
+.life-notes-footer a { display: inline-flex; align-items: center; gap: 12px; color: #896c93; font-size: 12px; text-decoration: none; }
+.life-notes a:focus-visible { outline: 3px solid #ba9acb; outline-offset: 4px; border-radius: 8px; }
+.life-notes-page { margin-top: 35px; margin-bottom: 50px; }
+.life-notes-page .life-notes-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+@media(max-width:850px) { .life-notes-grid { grid-template-columns: 1fr; } .life-notes-card > a { padding: 22px; } }
+@media(max-width:600px) { .life-notes { padding: 24px 20px; border-radius: 16px; } .life-notes h1,.life-notes h2 { font-size: 30px; } .life-notes-mark { display: none; } .life-notes-kicker { font-size: 8px; } .life-notes-empty { padding: 28px 15px; gap: 28px; flex-direction: column; text-align: center; } .life-notes-paper { width: 135px; height: 145px; text-align: left; } .life-notes-empty h3 { font-size: 23px; } .life-notes-page .life-notes-grid { grid-template-columns: 1fr; } }

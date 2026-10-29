@@ -1,0 +1,37 @@
+{
+  "source": "用户提供的小猪PNG图像",
+  "sourceSHA256": "377a9eb34e6e27e7ec755a500ebfe78e45521bef8fd87d3a66f08834f5e32c3e",
+  "sourceDimensions": [
+    1629,
+    640
+  ],
+  "rights": "用户提供用于本站标签图标；版权归原作者，未声明开放许可。",
+  "framing": {
+    "viewBox": [
+      0,
+      0,
+      840,
+      840
+    ],
+    "imageOffset": [
+      -789,
+      100
+    ],
+    "note": "小尺寸标签图标聚焦原图猪脸，透明底，保留原配色；原图完整保存，不修改首页个人头像。"
+  },
+  "version": "663f7394d8b2",
+  "files": {
+    "public/icon.svg": {
+      "bytes": 13737,
+      "SHA256": "663f7394d8b2f19430e9a55d61651fb7f9f5067a4de1175350646b264bf8578a"
+    },
+    "public/site-pig-32.png": {
+      "bytes": 1078,
+      "SHA256": "3322006de1c6f6656ff9ae5e166b9636776ab900e16653b36a7e2bb6f054dfc2"
+    },
+    "public/site-pig-180.png": {
+      "bytes": 18170,
+      "SHA256": "f75ef6b6cb097b5a58314b769bedc06c1752e2dba8834766a3cfa95d775c9524"
+    }
+  }
+}

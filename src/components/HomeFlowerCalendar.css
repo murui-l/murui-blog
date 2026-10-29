@@ -1,0 +1,49 @@
+.home-scrapbook .fc { min-width: 0; margin-top: 25px; padding-top: 21px; border-top: 1px dashed #b9b9ce88; color: #526079; text-align: left; }
+.home-scrapbook .fc-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 5px 10px; margin-bottom: 14px; }
+.home-scrapbook .fc-heading h3 { display: flex; align-items: center; gap: 7px; margin: 0; color: #5d607b; font-size: 14px; font-weight: 650; letter-spacing: .06em; }
+.home-scrapbook .fc-caption { color: #7b7589; font-size: 10px; letter-spacing: .02em; }
+.home-scrapbook .fc-flower { display: block; flex: 0 0 auto; width: 24px; height: 24px; overflow: visible; }
+.home-scrapbook .fc-petals { fill: #efbdd2; stroke: #d999b5; }
+.home-scrapbook .fc-flower-blue .fc-petals { fill: #b7d4ef; stroke: #8eafd4; }
+.home-scrapbook .fc-flower-heart { fill: #fff0b7; stroke: #cfb789; stroke-width: 1; }
+.home-scrapbook .fc-heading .fc-flower { width: 22px; height: 22px; }
+.home-scrapbook .fc-month-nav { display: flex; align-items: center; justify-content: space-between; gap: 4px; margin-bottom: 11px; }
+.home-scrapbook .fc-month-switch { display: flex; align-items: center; gap: 3px; min-width: 0; }
+.home-scrapbook .fc-month-label { min-width: 98px; color: #59627a; font-size: 13px; font-weight: 650; text-align: center; font-variant-numeric: tabular-nums; }
+.home-scrapbook .fc-nav-button { width: 30px; height: 30px; padding: 0; border: 0; border-radius: 50%; color: #746780; background: #fff7; font-family: inherit; font-size: 23px; line-height: 1; cursor: pointer; }
+.home-scrapbook .fc-today-button { min-height: 29px; padding: 3px 9px; border: 1px solid #b7bbd766; border-radius: 999px; background: #fff5; color: #6d6b83; font: inherit; font-size: 10px; white-space: nowrap; cursor: pointer; }
+.home-scrapbook .fc-nav-button:disabled, .home-scrapbook .fc-today-button:disabled { opacity: .42; cursor: default; }
+.home-scrapbook .fc-weekdays, .home-scrapbook .fc-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin: 0; padding: 0; list-style: none; }
+.home-scrapbook .fc-weekdays { margin-bottom: 5px; color: #8b8195; font-size: 10px; text-align: center; }
+.home-scrapbook .fc-cell { min-width: 0; }
+.home-scrapbook .fc-day { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; box-sizing: border-box; width: 100%; min-width: 28px; height: 38px; padding: 2px 0; border: 1px solid transparent; border-radius: 10px; color: #69728a; font: inherit; text-decoration: none; }
+.home-scrapbook .fc-day .fc-flower { width: 20px; height: 20px; }
+.home-scrapbook .fc-day-number { font-size: 10px; line-height: 13px; font-variant-numeric: tabular-nums; }
+.home-scrapbook .fc-day-flowered { background: #ffffff70; cursor: pointer; }
+.home-scrapbook .fc-day-flowered:hover { background: #fff9; border-color: #c4b2ce; }
+.home-scrapbook .fc-day-selected { border-color: #b29cc3; background: #faf3ffb3; box-shadow: 0 0 0 1px #b29cc31f; }
+.home-scrapbook .fc-day[aria-current="date"] .fc-day-number { padding: 0 4px; border-radius: 5px; color: #756087; background: #e8dfef; }
+.home-scrapbook .fc-day-quiet { color: #8c8b9b; }
+.home-scrapbook .fc-seed { display: block; height: 20px; color: #c5bbcf; font-size: 21px; line-height: 16px; }
+.home-scrapbook .fc-legend { display: flex; align-items: center; gap: 6px; margin: 12px 0 13px; color: #857a90; font-size: 10px; line-height: 1.5; }
+.home-scrapbook .fc-legend .fc-flower { width: 14px; height: 14px; }
+.home-scrapbook .fc-month-total { margin-left: auto; white-space: nowrap; }
+.home-scrapbook .fc-entry-panel { padding: 12px 0 0; border-top: 1px solid #c8c0d438; }
+.home-scrapbook .fc-status { margin: 0 0 8px; color: #88758e; font-size: 10px; line-height: 1.6; }
+.home-scrapbook .fc-entries { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; max-height: 170px; overflow-y: auto; scrollbar-width: thin; padding-right: 4px; }
+.home-scrapbook .fc-entry { min-width: 0; }
+.home-scrapbook .fc-entry-title { color: #586581; font-size: 13px; font-weight: 650; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
+.home-scrapbook .fc-entry-title:hover { color: #9a638c; text-decoration: underline; text-underline-offset: 3px; }
+.home-scrapbook .fc-entry-title > span { color: #9a86a7; font-weight: 400; }
+.home-scrapbook .fc-excerpt, .home-scrapbook .fc-empty-copy, .home-scrapbook .fc-loading { margin: 5px 0 0; color: #7a7d90; font-size: 11px; line-height: 1.9; overflow-wrap: anywhere; }
+.home-scrapbook .fc-excerpt-empty { color: #8e879a; }
+.home-scrapbook .fc-excerpt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.home-scrapbook .fc-recent-button { display: block; margin-top: 8px; padding: 0; border: 0; color: #886a94; background: transparent; font: inherit; text-align: left; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.home-scrapbook .fc button:focus-visible, .home-scrapbook .fc a:focus-visible { outline: 2px solid #9779b1; outline-offset: 3px; }
+@media (max-width: 380px) {
+  .home-scrapbook .fc { margin-top: 22px; padding-top: 18px; }
+  .home-scrapbook .fc-weekdays, .home-scrapbook .fc-days { gap: 2px; }
+  .home-scrapbook .fc-day { height: 38px; border-radius: 8px; }
+  .home-scrapbook .fc-day .fc-flower { width: 20px; height: 20px; }
+  .home-scrapbook .fc-heading { gap: 5px; }
+}

@@ -1,0 +1,15 @@
+.site-header.header-autohide>.kokomi-whisper{pointer-events:auto}
+.kokomi-whisper .kw-trigger{display:block;width:100%;height:100%;padding:0;border:0;border-radius:15px;background:transparent;cursor:pointer;pointer-events:auto;transition:transform .2s ease;touch-action:manipulation}
+.kokomi-whisper .kw-trigger:hover{transform:translateY(-2px) rotate(3deg)}.kokomi-whisper .kw-trigger:focus-visible,.kokomi-whisper .kw-bubble:focus-visible{outline:3px solid var(--murui-accent,#795c8f);outline-offset:4px}
+.kokomi-whisper .kw-trigger picture{display:block;width:100%;height:100%}.site-header.header-autohide .kokomi-whisper img{width:100%;height:100%;object-fit:contain}
+.kokomi-whisper .kw-bubble{position:absolute;right:0;top:calc(100% + 16px);width:min(284px,calc(100vw - 28px));min-height:160px;box-sizing:border-box;padding:46px 32px 32px;display:flex;align-items:center;border:0;border-radius:0;background:transparent;box-shadow:none;text-align:left;font-weight:400;color:#50546f;filter:drop-shadow(0 8px 15px #3f375326);pointer-events:auto;cursor:pointer;touch-action:manipulation;transform-origin:top right;animation:kw-appear .65s cubic-bezier(.2,.8,.3,1) both;font-family:var(--sans),sans-serif}
+.kokomi-whisper .kw-bubble.is-leaving{pointer-events:none;animation:kw-disappear .5s ease-in both}
+.kokomi-whisper .kw-cloud-shape,.kokomi-whisper .kw-cloud-glass{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.kokomi-whisper .kw-cloud-glass{backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.kokomi-whisper .kw-bubble::before,.kokomi-whisper .kw-bubble::after{content:"";position:absolute;border:1px solid #ffffffe8;border-radius:50%;background:var(--murui-paper-a,#fff5fa);pointer-events:none}
+.kokomi-whisper .kw-bubble::before{right:24px;top:-12px;width:10px;height:10px}.kokomi-whisper .kw-bubble::after{right:14px;top:-23px;width:5px;height:5px}
+.kokomi-whisper .kw-text{position:relative;z-index:1;margin:0;font-size:13px;line-height:1.9;overflow-wrap:anywhere;white-space:normal;pointer-events:none}
+@keyframes kw-appear{from{opacity:0;transform:translateY(12px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes kw-disappear{from{opacity:1;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(-8px) scale(.98)}}
+@media(max-width:760px){.kokomi-whisper .kw-bubble{width:min(248px,calc(100vw - 28px));min-height:156px;padding:44px 28px 30px}.kokomi-whisper .kw-text{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.kokomi-whisper .kw-trigger{transition:none}.kokomi-whisper .kw-trigger:hover{transform:none}.kokomi-whisper .kw-bubble{animation:none}.kokomi-whisper .kw-bubble.is-leaving{opacity:0;transform:none}}

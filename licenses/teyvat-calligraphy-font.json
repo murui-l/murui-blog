@@ -1,0 +1,141 @@
+{
+  "font": "Ma Shan Zheng",
+  "usage": "Only Teyvat destination hero titles, including Frostmoon. Official Google Fonts static subset, self hosted with Next/font/local; outlines not modified.",
+  "license": "SIL Open Font License 1.1",
+  "licenseFile": "MaShanZheng-OFL.txt",
+  "fontSHA256": "3efe89ad674eb6ae01f2abd4b75bb22baff15e8b748a75222fa1d07738d19326",
+  "verification": {
+    "verified": true,
+    "family": "Ma Shan Zheng",
+    "format": "woff2",
+    "requiredText": "蒙德璃月稻妻须弥枫丹纳塔至冬挪德卡莱霜月",
+    "uniqueRequired": 18,
+    "cmapGlyphs": [
+      {
+        "char": " ",
+        "unicode": "U+0020",
+        "glyph": "space"
+      },
+      {
+        "char": "丹",
+        "unicode": "U+4E39",
+        "glyph": "uni4E39"
+      },
+      {
+        "char": "冬",
+        "unicode": "U+51AC",
+        "glyph": "uni51AC"
+      },
+      {
+        "char": "卡",
+        "unicode": "U+5361",
+        "glyph": "uni5361"
+      },
+      {
+        "char": "塔",
+        "unicode": "U+5854",
+        "glyph": "uni5854"
+      },
+      {
+        "char": "妻",
+        "unicode": "U+59BB",
+        "glyph": "uni59BB"
+      },
+      {
+        "char": "弥",
+        "unicode": "U+5F25",
+        "glyph": "uni5F25"
+      },
+      {
+        "char": "德",
+        "unicode": "U+5FB7",
+        "glyph": "uni5FB7"
+      },
+      {
+        "char": "挪",
+        "unicode": "U+632A",
+        "glyph": "uni632A"
+      },
+      {
+        "char": "月",
+        "unicode": "U+6708",
+        "glyph": "uni6708"
+      },
+      {
+        "char": "枫",
+        "unicode": "U+67AB",
+        "glyph": "uni67AB"
+      },
+      {
+        "char": "璃",
+        "unicode": "U+7483",
+        "glyph": "uni7483"
+      },
+      {
+        "char": "稻",
+        "unicode": "U+7A3B",
+        "glyph": "uni7A3B"
+      },
+      {
+        "char": "纳",
+        "unicode": "U+7EB3",
+        "glyph": "uni7EB3"
+      },
+      {
+        "char": "至",
+        "unicode": "U+81F3",
+        "glyph": "uni81F3"
+      },
+      {
+        "char": "莱",
+        "unicode": "U+83B1",
+        "glyph": "uni83B1"
+      },
+      {
+        "char": "蒙",
+        "unicode": "U+8499",
+        "glyph": "uni8499"
+      },
+      {
+        "char": "霜",
+        "unicode": "U+971C",
+        "glyph": "uni971C"
+      },
+      {
+        "char": "须",
+        "unicode": "U+987B",
+        "glyph": "uni987B"
+      }
+    ],
+    "missing": [],
+    "files": {
+      "frostmoon-titles.woff2": {
+        "bytes": 9512,
+        "sha256": "3efe89ad674eb6ae01f2abd4b75bb22baff15e8b748a75222fa1d07738d19326"
+      },
+      "OFL.txt": {
+        "bytes": 4397,
+        "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+      },
+      "google-fonts-subset.css": {
+        "bytes": 469,
+        "sha256": "b11fb759b2393502fa3b7cb65fd70329d35d92e3e9467e0d29b12c415e987068"
+      }
+    },
+    "names": {
+      "1": "Ma Shan Zheng",
+      "2": "Regular",
+      "4": "Ma Shan Zheng Regular",
+      "6": "MaShanZheng-Regular"
+    },
+    "source": {
+      "project": "https://github.com/googlefonts/mashanzheng",
+      "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/mashanzheng/OFL.txt",
+      "css": "https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap&text=%E8%92%99%E5%BE%B7%E7%92%83%E6%9C%88%E7%A8%BB%E5%A6%BB%E9%A1%BB%E5%BC%A5%E6%9E%AB%E4%B8%B9%E7%BA%B3%E5%A1%94%E8%87%B3%E5%86%AC%E6%8C%AA%E5%BE%B7%E5%8D%A1%E8%8E%B1%E9%9C%9C%E6%9C%88",
+      "font": "https://fonts.gstatic.com/l/font?kit=NaPecZTRCLxvwo41b4gvzkXaRMH0Pmjr31kfHYezZB0vK5o4H6vD1oAJkxGNHhXlXduJu3zc2sawzfT_dlZhimbaAGjTs0wIH9guIg&skey=13c999d73b164fc8&v=v18"
+    },
+    "license": "SIL Open Font License 1.1; full copyright notice and license retained. Official Google Fonts text-subset; no glyph edits.",
+    "checkedAt": "2026-10-24T01:26:48.556344+08:00",
+    "checkTool": "fontTools.ttLib.TTFont; isolated external research tool, not part of website source"
+  }
+}

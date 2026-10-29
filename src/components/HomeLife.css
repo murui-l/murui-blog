@@ -1,0 +1,28 @@
+/* Existing full-screen interest physics surface. The floating controls have
+   their own style; this layer continues falling independently of scroll. */
+.murui-interest-rain {
+  position:fixed;inset:0;width:100%;height:100dvh;z-index:35;
+  margin:0;padding:0;list-style:none;overflow:hidden;
+  pointer-events:none;visibility:hidden;
+}
+.murui-interest-rain[data-visible=true] {visibility:visible}
+.murui-interest-rain .ml-rain-pill {
+  position:absolute;left:0;top:0;width:max-content;border:1px solid #fffffff0;border-radius:999px;
+  box-shadow:0 5px 14px #46577522,inset 0 2px 0 #ffffff80;
+  transform-origin:center;pointer-events:auto;
+}
+.murui-interest-rain .ml-rain-pill button {
+  display:block;padding:15px 28px;margin:0;border:0;border-radius:inherit;
+  background:transparent;color:#3b485e;font:650 19px/1.25 var(--sans);
+  white-space:nowrap;cursor:grab;touch-action:none;user-select:none;
+}
+.murui-interest-rain .ml-rain-pill button.is-dragging {cursor:grabbing}
+.murui-interest-rain .ml-rain-pill button:focus-visible {outline:3px solid #82729e;outline-offset:3px}
+.murui-interest-rain[data-motion=falling] .ml-rain-pill {will-change:transform}
+.murui-interest-rain .ml-interest-color-0 {background:#f7dfe8}
+.murui-interest-rain .ml-interest-color-1 {background:#dfecfb}
+.murui-interest-rain .ml-interest-color-2 {background:#ece2fa}
+.murui-interest-rain .ml-interest-color-3 {background:#f8edc9}
+.murui-interest-rain .ml-interest-color-4 {background:#dbefdf}
+@media(max-width:760px){.murui-interest-rain .ml-rain-pill button {padding:12px 20px;font-size:16px}}
+@media(prefers-reduced-motion:reduce){.murui-interest-rain {display:none}}

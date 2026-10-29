@@ -1,0 +1,280 @@
+{
+  "capturedAt": "2026-10-23T17:43:48.790Z",
+  "owner": "HoYoverse / miHoYo; OST by HOYO-MiX; moon ornament by Murui",
+  "usage": "Fan travel display. Four full-frame stills from the official Genshin Impact Frost Moon version PV; original Genshin/Bilibili marks retained. Source video is not redistributed. Only full-frame resize and WebP encoding. HoYoverse retains ownership. The Murui moon ornament is decorative, not an official crest. Regional audio uses public provider streaming links, no local audio copies.",
+  "images": [
+    {
+      "nation": "frostmoon",
+      "kind": "cover",
+      "src": "/images/artworks/teyvat-frostmoon-cover.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+      "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=60",
+      "originalSHA256": "abdfaca9ba02cb36c44c05a1fee6cdc03dd0a555ac018bc2eecc96373757ad0f",
+      "SHA256": "603ac879964e55b8b83a35594bb061687256dc261ed31f72e127be83708bc0b2",
+      "frameTime": "00:01:00"
+    },
+    {
+      "nation": "frostmoon",
+      "kind": "scene-1",
+      "src": "/images/artworks/teyvat-frostmoon-scene-1.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+      "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=50",
+      "originalSHA256": "b376eeb9a172f6ef1c764a031cf18801f4db8ed712e93e6fe6a1a3ed0edaf53c",
+      "SHA256": "4f7f8d50e61471ddb454c04d1e7a39e71a58023dfffffa6fdf80ca68cc53ce08",
+      "frameTime": "00:00:50"
+    },
+    {
+      "nation": "frostmoon",
+      "kind": "scene-2",
+      "src": "/images/artworks/teyvat-frostmoon-scene-2.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+      "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=122",
+      "originalSHA256": "95201c9354423b7cacb334fe0d84e91af37c3cdac47a8bb4bcea2bbc9c67c497",
+      "SHA256": "6bb7f1272315bc40d33d7799cb0085cb28d6560f5aa1390fdfb03bb765c8b142",
+      "frameTime": "00:02:02"
+    },
+    {
+      "nation": "frostmoon",
+      "kind": "scene-3",
+      "src": "/images/artworks/teyvat-frostmoon-scene-3.webp",
+      "width": 1280,
+      "height": 720,
+      "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+      "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=130",
+      "originalSHA256": "7c96fdb7c131a4dae40c41fe598c3ae7d85189ebe398c1ca4e578a9547a84217",
+      "SHA256": "8eea536ecf8c99e68a172923404a23ecbcd457574de5ded4cad498beceaf82f0",
+      "frameTime": "00:02:10"
+    },
+    {
+      "nation": "frostmoon",
+      "kind": "crest",
+      "src": "/images/artworks/teyvat-frostmoon-crest.svg",
+      "width": 160,
+      "height": 160,
+      "source": "https://muruiwen.cn/teyvat/frostmoon",
+      "original": "",
+      "SHA256": "622cc6f2de83d25a17183108affcde0166a0b3ac60adc7512381e9ff5fa91441",
+      "owner": "Murui"
+    }
+  ],
+  "music": [
+    {
+      "nation": "frostmoon",
+      "id": "netease-3411268918",
+      "title": "须臾的舒闲 Transient Tranquility",
+      "artist": "HOYO-MiX",
+      "src": "https://music.163.com/song/media/outer/url?id=3411268918.mp3",
+      "source": "https://music.163.com/#/song?id=3411268918",
+      "cover": "https://p1.music.126.net/2Q5r3u1DQ9lEIPySEIGmeA==/109951173634599535.jpg",
+      "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+      "provider": "netease",
+      "instrumental": false,
+      "hasTimedLyrics": false
+    },
+    {
+      "nation": "frostmoon",
+      "id": "netease-3411268292",
+      "title": "永夜的悼挽 Everlasting Dirge",
+      "artist": "HOYO-MiX",
+      "src": "https://music.163.com/song/media/outer/url?id=3411268292.mp3",
+      "source": "https://music.163.com/#/song?id=3411268292",
+      "cover": "https://p1.music.126.net/2Q5r3u1DQ9lEIPySEIGmeA==/109951173634599535.jpg",
+      "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+      "provider": "netease",
+      "instrumental": false,
+      "hasTimedLyrics": false
+    }
+  ],
+  "musicVerification": {
+    "checkedAt": "2026-10-23T17:35:17.658Z",
+    "subject": "原神霜月 Frost Moon：挪德卡莱以外的可探索月面地区，非现实月球素材",
+    "status": "verified-playable",
+    "recommendation": {
+      "main": {
+        "id": "netease-3411268918",
+        "providerId": "3411268918",
+        "title": "须臾的舒闲 Transient Tranquility",
+        "artist": "HOYO-MiX",
+        "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+        "albumId": "388961122",
+        "cover": "https://p1.music.126.net/2Q5r3u1DQ9lEIPySEIGmeA==/109951173634599535.jpg",
+        "durationMs": 115663,
+        "provider": "netease",
+        "src": "https://music.163.com/song/media/outer/url?id=3411268918.mp3",
+        "source": "https://music.163.com/#/song?id=3411268918",
+        "instrumental": false,
+        "hasTimedLyrics": false,
+        "lyricCheck": {
+          "status": 200,
+          "nolyric": false,
+          "uncollected": false,
+          "timedLineCount": 0,
+          "containsInstrumentalMarker": false
+        },
+        "media": {
+          "status": 206,
+          "type": "audio/mpeg; charset=UTF-8",
+          "contentRange": "bytes 0-4095/1851693",
+          "contentLength": "4096",
+          "acceptRanges": null,
+          "bytes": 4096,
+          "audio": true,
+          "requestedRange": "bytes=0-4095"
+        },
+        "role": "main",
+        "verifiedAt": "2026-10-23T17:28:56.877Z",
+        "officialDisc": 1,
+        "officialTrack": 11,
+        "officialVideoTimestamp": "00:19:24",
+        "sceneCrossReference": "霜月 · 乌吉恩圈；旋曜玉帛一百八十四",
+        "selectionReason": "用户明确指定乌吉恩圈背景音乐，使用该地点《须臾的舒闲》作为主曲。"
+      },
+      "fallback": {
+        "id": "netease-3411268292",
+        "providerId": "3411268292",
+        "title": "永夜的悼挽 Everlasting Dirge",
+        "artist": "HOYO-MiX",
+        "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+        "albumId": "388961122",
+        "cover": "https://p1.music.126.net/2Q5r3u1DQ9lEIPySEIGmeA==/109951173634599535.jpg",
+        "durationMs": 117633,
+        "provider": "netease",
+        "src": "https://music.163.com/song/media/outer/url?id=3411268292.mp3",
+        "source": "https://music.163.com/#/song?id=3411268292",
+        "instrumental": false,
+        "hasTimedLyrics": false,
+        "lyricCheck": {
+          "status": 200,
+          "nolyric": false,
+          "uncollected": false,
+          "timedLineCount": 0,
+          "containsInstrumentalMarker": false
+        },
+        "media": {
+          "status": 206,
+          "type": "audio/mpeg; charset=UTF-8",
+          "contentRange": "bytes 0-4095/1883181",
+          "contentLength": "4096",
+          "bytes": 4096,
+          "audio": true,
+          "requestedRange": "bytes=0-4095"
+        },
+        "role": "fallback",
+        "verifiedAt": "2026-10-23T17:35:17.658Z",
+        "officialDisc": 1,
+        "officialTrack": 10,
+        "officialVideoTimestamp": "00:17:26",
+        "sceneCrossReference": "霜月 · 乌吉恩圈",
+        "selectionReason": "同地点的另一首背景曲《永夜的悼挽》，不使用浮沤泊、月荡海或其它地区的曲目冒充。"
+      }
+    },
+    "additionalVerifiedCandidate": {
+      "id": "netease-3411268297",
+      "providerId": "3411268297",
+      "title": "斜月如水 Lunar Ripples",
+      "artist": "HOYO-MiX",
+      "album": "原神-珍珠之歌6 The Shimmering Voyage Vol. 6",
+      "albumId": "388961122",
+      "cover": "https://p2.music.126.net/2Q5r3u1DQ9lEIPySEIGmeA==/109951173634599535.jpg",
+      "durationMs": 120693,
+      "provider": "netease",
+      "src": "https://music.163.com/song/media/outer/url?id=3411268297.mp3",
+      "source": "https://music.163.com/#/song?id=3411268297",
+      "instrumental": false,
+      "hasTimedLyrics": false,
+      "lyricCheck": {
+        "status": 200,
+        "nolyric": false,
+        "uncollected": false,
+        "timedLineCount": 0,
+        "containsInstrumentalMarker": false
+      },
+      "media": {
+        "status": 206,
+        "type": "audio/mpeg; charset=UTF-8",
+        "contentRange": "bytes 0-4095/1931949",
+        "contentLength": "4096",
+        "acceptRanges": null,
+        "bytes": 4096,
+        "audio": true,
+        "requestedRange": "bytes=0-4095"
+      },
+      "officialDisc": 1,
+      "officialTrack": 22,
+      "officialVideoTimestamp": "00:40:17",
+      "excludedFromRequestedLocation": true,
+      "note": "月荡海音乐，保留原始研究证据，不用于乌吉恩圈主曲或备用曲。"
+    },
+    "sources": [
+      {
+        "url": "https://genshin.hoyoverse.com/en/news/detail/165317",
+        "publisher": "HoYoverse / Genshin Impact",
+        "title": "The Shimmering Voyage Vol. 6",
+        "type": "official-release-announcement",
+        "supports": "官方原神 OST 专辑发行出处。网页为脚本渲染，文本浏览工具没有正文；官方认证 YouTube 发布及曲目列表补充核验。"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=4Pw1zfcv7yI",
+        "publisher": "Genshin Impact（认证官方账号）",
+        "title": "The Shimmering Voyage Vol. 6 - Disc 1: Origin of Moonlight",
+        "publishedDate": "2026-07-21",
+        "type": "official-album-video",
+        "supports": "官方说明列出HOYO-MiX制作信息、第10首Everlasting Dirge（17:26）与第11首Transient Tranquility（19:24）的曲目名称及时间点。"
+      },
+      {
+        "url": "https://open.spotify.com/embed/album/1FkxT3cP2litsldCdvWIM8",
+        "publisher": "HOYO-MiX / Spotify",
+        "type": "official-distribution-album",
+        "supports": "发行专辑页再次核对英文曲名、艺人和时长。"
+      },
+      {
+        "url": "https://genshin.hoyoverse.com/id/news/detail/165018",
+        "publisher": "HoYoverse / Genshin Impact",
+        "title": "Frost Moon coordinates confirmed",
+        "publishedDate": "2026-07-01",
+        "type": "official-region-announcement",
+        "supports": "官方新增地区 Frost Moon 的存在与游戏归属。"
+      },
+      {
+        "url": "https://wiki.biligame.com/ys/%E7%8F%8D%E7%8F%A0%E4%B9%8B%E6%AD%8C6",
+        "publisher": "原神 BWIKI（非官方百科，仅为场景关联交叉参考）",
+        "type": "secondary-location-cross-reference",
+        "supports": "曲目表第10首《永夜的悼挽》和第11首《须臾的舒闲》均对应乌吉恩圈；主曲/备用选择同一地点。百科仅为场景交叉参考，官方发行身份由原神官方认证视频/发行专辑核实。"
+      },
+      {
+        "url": "https://www.hoyodex.com/wiki/genshin-impact/lunar-highlands",
+        "publisher": "HoYoDex（非官方百科，场景交叉参考）",
+        "type": "secondary-location-cross-reference",
+        "supports": "背景音乐表第10首Everlasting Dirge与第11首Transient Tranquility均列为Ungien’s Circle；未核实二者对应昼夜，故不宣称为昼/夜变奏。"
+      }
+    ],
+    "verification": {
+      "metadataSource": "网易云音乐匿名公开 song/detail，核对真实 provider ID、HOYO-MiX 艺人、专辑 388961122 与双语曲名。",
+      "audioSource": "网站现有 music.163.com/song/media/outer/url 外链；只读取 Range bytes=0-4095，两个推荐曲均返回 206 audio/mpeg 和正确 Content-Range。未落盘整首音频。",
+      "lyricSource": "网易云匿名song/lyric；乌吉恩圈主曲和备用曲均无可计时歌词，hasTimedLyrics=false；接口未标记nolyric或纯音乐，因此instrumental=false仅为保守播放器配置，不声称经听辨确认有人声。",
+      "credentials": "未携带本站登录凭据、Cookie 或私人数据；没有修改源码、生产库或歌单。",
+      "caveat": "公开外链可用性为检查时状态，运行时仍保留主曲与同地区备用曲失败处理。官方发行页证明曲目身份；精确场景关联为独立百科交叉参考，未冒充官方逐场景曲目表。",
+      "locationCaveat": "已交叉确认两首均为乌吉恩圈背景音乐；未找到可靠资料说明固定昼夜对应，因此只称同地点备用曲，不称夜间变奏。"
+    },
+    "requestedLocation": "原神霜月 · 乌吉恩圈 Ungien’s Circle"
+  },
+  "video": {
+    "title": "《原神》「空月之歌·谐谑」版本PV：「映夏！归乡？千灵节！」",
+    "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+    "officialPage": "https://genshin.hoyoverse.com/en/news/detail/164855",
+    "officialYouTube": "https://www.youtube.com/watch?v=ou_LXniASyY",
+    "uploader": {
+      "name": "原神",
+      "id": 401742377
+    },
+    "videoSHA256": "64306cfa5990426c5ee7b9c6193fcbb1a03096bba3d89fa56db7c49b0e0dafc0",
+    "frameDimensions": "1280x720",
+    "fullFramesNoCrop": true
+  }
+}

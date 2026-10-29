@@ -1,0 +1,407 @@
+[
+  {
+    "nation": "mondstadt",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-mondstadt-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=0",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200319/2020031918573764353.png"
+  },
+  {
+    "nation": "mondstadt",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-mondstadt-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=0",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200320/2020032014410864090.jpg"
+  },
+  {
+    "nation": "mondstadt",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-mondstadt-scene-1.webp",
+    "width": 639,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=0",
+    "original": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311461397057.jpg"
+  },
+  {
+    "nation": "mondstadt",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-mondstadt-scene-2.webp",
+    "width": 639,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=0",
+    "original": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311462187517.jpg"
+  },
+  {
+    "nation": "mondstadt",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-mondstadt-scene-3.webp",
+    "width": 639,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=0",
+    "original": "https://uploadstatic.mihoyo.com/contentweb/20200113/2020011311463354982.jpg"
+  },
+  {
+    "nation": "liyue",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-liyue-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=1",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200319/2020031921033557909.png"
+  },
+  {
+    "nation": "liyue",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-liyue-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=1",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200320/2020032014541768485.jpg"
+  },
+  {
+    "nation": "liyue",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-liyue-scene-1.webp",
+    "width": 1562,
+    "height": 916,
+    "source": "https://genshin.hoyoverse.com/en/map?region=1",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920024554488.png"
+  },
+  {
+    "nation": "liyue",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-liyue-scene-2.webp",
+    "width": 639,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=1",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920005039313.jpg"
+  },
+  {
+    "nation": "liyue",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-liyue-scene-3.webp",
+    "width": 639,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=1",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200329/2020032920010032260.jpg"
+  },
+  {
+    "nation": "inazuma",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-inazuma-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=2",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071618595355993.png"
+  },
+  {
+    "nation": "inazuma",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-inazuma-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=2",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210719/2021071920203256336.jpg"
+  },
+  {
+    "nation": "inazuma",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-inazuma-scene-1.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=2",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619015166388.jpg"
+  },
+  {
+    "nation": "inazuma",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-inazuma-scene-2.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=2",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619022571627.jpg"
+  },
+  {
+    "nation": "inazuma",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-inazuma-scene-3.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=2",
+    "original": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210716/2021071619023818196.jpg"
+  },
+  {
+    "nation": "sumeru",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-sumeru-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=3",
+    "original": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/f77d0c308b54728b6a1f3bc525e42955_1063974383729558189.png"
+  },
+  {
+    "nation": "sumeru",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-sumeru-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=3",
+    "original": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/8969f683b92839ac427c875d0d742be2_4596868760376591695.jpg"
+  },
+  {
+    "nation": "sumeru",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-sumeru-scene-1.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=3",
+    "original": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/68de4c67d6c08495aaa8cab9db2c3129_2534580751654510538.jpg"
+  },
+  {
+    "nation": "sumeru",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-sumeru-scene-2.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=3",
+    "original": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/6f9a5a8a10a5c9783b4a56339144eb4f_2397078545900004331.jpg"
+  },
+  {
+    "nation": "sumeru",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-sumeru-scene-3.webp",
+    "width": 640,
+    "height": 355,
+    "source": "https://genshin.hoyoverse.com/en/map?region=3",
+    "original": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/16/de1686c7e77653fc820ef97b2e1d6ecc_4235947811467035450.jpg"
+  },
+  {
+    "nation": "fontaine",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-fontaine-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=4",
+    "original": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/10/4f32dd59ce1ed2f07d20f79fc64a358c_6481188169214364264.png"
+  },
+  {
+    "nation": "fontaine",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-fontaine-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=4",
+    "original": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/10/721a74c43614d7aeb25b046cabfb57be_2232465004168336408.jpg"
+  },
+  {
+    "nation": "fontaine",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-fontaine-scene-1.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=4",
+    "original": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/fd9a8e0c453010fb28594abd0ba868ea_812176858252732462.jpg"
+  },
+  {
+    "nation": "fontaine",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-fontaine-scene-2.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=4",
+    "original": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/467960f89cfeb38556040e7ca5d7c168_1026920932186304365.jpg"
+  },
+  {
+    "nation": "fontaine",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-fontaine-scene-3.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=4",
+    "original": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/08/54b391e68d6dddf262051412dbda4593_9105979803753997228.jpg"
+  },
+  {
+    "nation": "natlan",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-natlan-crest.webp",
+    "width": 180,
+    "height": 180,
+    "source": "https://genshin.hoyoverse.com/en/map?region=5",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/d1b8a99bd52958f9550432504819db85_273180170429996290.png"
+  },
+  {
+    "nation": "natlan",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-natlan-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=5",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/b86e153b41b5106f287d7bcb0e801a14_787934890696876766.jpg"
+  },
+  {
+    "nation": "natlan",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-natlan-scene-1.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=5",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/7bd69431d390fe8a4ebc72db2fd46cc0_8343194283762831562.jpg"
+  },
+  {
+    "nation": "natlan",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-natlan-scene-2.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=5",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/47c5f381afcdec37b72653c88c556514_3318722355411180696.jpg"
+  },
+  {
+    "nation": "natlan",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-natlan-scene-3.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=5",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125279/49776661a4084ff4ac9281d01bf5e753_276805627587217132.jpg"
+  },
+  {
+    "nation": "snezhnaya",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-snezhnaya-crest.webp",
+    "width": 180,
+    "height": 183,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/05b3bf1a72730e1204e347afcf74d5df_8625034156488398724.png"
+  },
+  {
+    "nation": "snezhnaya",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-snezhnaya-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/0ebacdac20e0a8590b8f04d2c5534975_7939445415112496467.jpeg"
+  },
+  {
+    "nation": "snezhnaya",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-snezhnaya-scene-1.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/28fc0f6bce2539262ede83d8be5af049_2176264054255711717.png"
+  },
+  {
+    "nation": "snezhnaya",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-snezhnaya-scene-2.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/e64fb43383068586a8d664e39e3624dc_7185022946082735623.png"
+  },
+  {
+    "nation": "snezhnaya",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-snezhnaya-scene-3.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/f39615c4283acfdc84c22102ae6c9289_7810120138976326795.png"
+  },
+  {
+    "nation": "nod-krai",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-nod-krai-cover.webp",
+    "width": 1920,
+    "height": 1080,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/ba6076b65f702f3d3d0f12f302a95c5c_3928880897739121554.png"
+  },
+  {
+    "nation": "nod-krai",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-nod-krai-scene-1.webp",
+    "width": 1598,
+    "height": 893,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/4a5f80299681d3771223718850e1580f_6016688013675250249.png"
+  },
+  {
+    "nation": "nod-krai",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-nod-krai-scene-2.webp",
+    "width": 1593,
+    "height": 891,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/e54c3ad93a51cbba384cec89c083e573_2656465063953217200.png"
+  },
+  {
+    "nation": "nod-krai",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-nod-krai-scene-3.webp",
+    "width": 1920,
+    "height": 958,
+    "source": "https://genshin.hoyoverse.com/en/map?region=6",
+    "original": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159175/d546a6006c42aebce823dc4922b05cd6_8593949638180330310.png"
+  },
+  {
+    "nation": "nod-krai",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-nod-krai-crest.svg",
+    "width": 160,
+    "height": 160,
+    "source": "https://muruiwen.cn/teyvat/nod-krai",
+    "original": ""
+  },
+  {
+    "nation": "frostmoon",
+    "kind": "cover",
+    "src": "/images/artworks/teyvat-frostmoon-cover.webp",
+    "width": 1280,
+    "height": 720,
+    "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+    "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=60"
+  },
+  {
+    "nation": "frostmoon",
+    "kind": "scene-1",
+    "src": "/images/artworks/teyvat-frostmoon-scene-1.webp",
+    "width": 1280,
+    "height": 720,
+    "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+    "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=50"
+  },
+  {
+    "nation": "frostmoon",
+    "kind": "scene-2",
+    "src": "/images/artworks/teyvat-frostmoon-scene-2.webp",
+    "width": 1280,
+    "height": 720,
+    "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+    "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=122"
+  },
+  {
+    "nation": "frostmoon",
+    "kind": "scene-3",
+    "src": "/images/artworks/teyvat-frostmoon-scene-3.webp",
+    "width": 1280,
+    "height": 720,
+    "source": "https://www.bilibili.com/video/BV1KRjF6WE4o/",
+    "original": "https://www.bilibili.com/video/BV1KRjF6WE4o/?t=130"
+  },
+  {
+    "nation": "frostmoon",
+    "kind": "crest",
+    "src": "/images/artworks/teyvat-frostmoon-crest.svg",
+    "width": 160,
+    "height": 160,
+    "source": "https://muruiwen.cn/teyvat/frostmoon",
+    "original": ""
+  }
+]

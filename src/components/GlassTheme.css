@@ -1,0 +1,36 @@
+/* Scope frosted surfaces to the public blog; the CMS keeps its own theme. */
+body.blog-glass{--paper:#e8e9f2;--line:#dce5f0;background:#e8e9f2;padding-bottom:105px;isolation:isolate}
+.blog-glass .site-header{background:#f9fcffae;border-bottom:1px solid #ffffffde;backdrop-filter:blur(24px) saturate(135%);-webkit-backdrop-filter:blur(24px) saturate(135%);box-shadow:0 5px 22px #7792b80a}
+.blog-glass .anime-home,.blog-glass .mg-room{background:transparent}
+.blog-glass .ah-hero{margin-top:18px;max-width:calc(100% - 36px);border:1px solid #fff;background:#e5eefe99;box-shadow:0 17px 50px #7792b81c,inset 0 1px 0 #fff}
+.blog-glass .ah-daydream{background:radial-gradient(ellipse at 85% 28%,#ffffffbb,transparent 48%),radial-gradient(ellipse at 80% 80%,#e7cce794,transparent 50%),linear-gradient(120deg,#e8f2ff9e,#d7e6fa80 55%,#f0dff1a3)}
+.blog-glass .ah-hero-shade{background:linear-gradient(90deg,#f6faffbd,#f5f9ff59 45%,transparent 72%)}
+.blog-glass :is(.ah-welcome-strip,.life-notes,.ah-profile,.ah-categories,.af-featured,.af-card,.ah-original-card,.ah-xhs-card,.ah-uploaded-card,.about-card,.mg-hero,.mg-featured-quote,.mg-spell-collection,.mg-gallery-collection,.mg-pet-section){border-color:#fffffff0;box-shadow:0 10px 34px #8297b316,inset 0 1px 0 #fff;background:#ffffff9e;backdrop-filter:blur(18px) saturate(115%);-webkit-backdrop-filter:blur(18px) saturate(115%)}
+.blog-glass .life-notes{background:linear-gradient(120deg,#ffffffa8,#f5e7f48f)}
+.blog-glass .time-slices{background:linear-gradient(120deg,#ffffffa8,#e5effca3)}
+.blog-glass .life-notes-card{background:#ffffff78;border-color:#ffffffe8}.blog-glass .life-notes-card:hover{background:#ffffffbf}
+.blog-glass .mg-hero,.blog-glass .mg-pet-section{background:linear-gradient(125deg,#fffcf7b8,#fbe9e2a8)}
+.blog-glass .mg-spell-collection{background:#fffdf7c7}
+.blog-glass .site-footer{border-color:#ffffffcf;padding-top:30px;padding-bottom:26px;border-radius:25px;background:#ffffff57;backdrop-filter:blur(16px);box-shadow:inset 0 1px 0 #fff;margin-top:45px}
+.blog-glass .footer-links{flex-wrap:wrap;gap:15px 22px}.blog-glass .site-footer .copyright{border-color:#dce5f0a3}
+.home-changelog{display:block;padding:21px;border:1px solid #fff;border-radius:17px;background:linear-gradient(120deg,#ffffffb3,#f1e8f4a3);box-shadow:0 7px 25px #738aa715;backdrop-filter:blur(18px);color:#607797;font-family:var(--sans)}
+.home-changelog>span:first-child{display:flex;gap:8px;align-items:center;font-size:11px;color:#89779e}.home-changelog>span:first-child>span{color:#b898bd;font-size:20px}.home-changelog strong{display:block;font-size:16px;font-weight:600;color:#556c8e;margin-top:10px}.home-changelog p{font-size:11px;line-height:1.8;margin:9px 0 15px;color:#7185a0}.home-changelog>span:last-child{display:flex;align-items:center;justify-content:space-between;font-size:10px;padding-top:12px;border-top:1px dashed #d8ddec}.home-changelog:hover{background:#ffffffcf}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.blog-glass .site-header,.music-player{background:#f7f9fe}.blog-glass :is(.life-notes,.ah-profile,.ah-categories,.af-featured,.af-card,.ah-original-card,.changelog-card,.home-changelog){background:#f9faff}}
+@media(max-width:650px){body.blog-glass{background-attachment:scroll;padding-bottom:90px}.blog-glass .ah-hero{margin-top:10px;max-width:calc(100% - 20px);border-radius:22px}.blog-glass .site-footer{margin-left:14px;margin-right:14px;width:calc(100% - 28px);padding-left:20px;padding-right:20px}}
+
+/* Keep the wallpaper visible through navigation and cards, with readable paper areas. */
+.blog-glass .site-header.anime-header{background:#faf8ffb0;box-shadow:0 5px 24px #29253d12}
+.blog-glass :is(.ah-content,.ah-gallery,.article-wrap,.interior,.profile-page,.writing-page,.changelog-page){background:#f8f8ff82;border:1px solid #ffffffc7;border-radius:26px;box-shadow:0 12px 40px #27243b12;backdrop-filter:blur(20px) saturate(110%);-webkit-backdrop-filter:blur(20px) saturate(110%)}
+.blog-glass .ah-content{padding:26px;gap:26px}
+.blog-glass .ah-gallery{padding:26px}
+.blog-glass :is(.interior,.article-wrap,.profile-page,.writing-page,.changelog-page){margin-top:30px;margin-bottom:24px;padding-top:32px;padding-bottom:42px;width:calc(100% - 48px);background:#fbfaffb3}
+.blog-glass .article-wrap{background:#fffdf9d9}
+.blog-glass .ah-daydream{background:transparent}
+.blog-glass .ah-hero{background:#f5f0fa38;border-color:#ffffffc9}
+.blog-glass .ah-hero-shade{background:linear-gradient(90deg,#f7f9ffbf,#f5f7ff59 44%,#f8f3ff0d 78%)}
+.blog-glass .mg-room{margin-top:24px;border:1px solid #ffffffc7;border-radius:26px;background:#fdf5f899;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.blog-glass :is(.profile-preview,.profile-form,.writer-login,.writer-paper,.writer-details section){background:#fffefae8}
+.blog-glass .site-footer{background:#fffaffad;box-shadow:0 10px 35px #29253d0f,inset 0 1px 0 #fff}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.blog-glass :is(.ah-content,.ah-gallery,.article-wrap,.interior,.profile-page,.writing-page,.changelog-page){background:#f8f8f5ed}}
+@media(max-width:850px){.blog-glass .ah-content{gap:24px;padding:22px}}
+@media(max-width:650px){.blog-glass :is(.ah-content,.ah-gallery){padding:18px;border-radius:20px}.blog-glass :is(.interior,.article-wrap,.profile-page,.writing-page,.changelog-page){width:calc(100% - 24px);margin-top:16px;padding:24px 18px 32px;border-radius:22px}.blog-glass .ah-hero-shade{background:linear-gradient(0deg,#f6f7ffc9,#f6f7ff78 60%,#f6f7ff24)}.blog-glass .site-footer{margin-top:30px}}

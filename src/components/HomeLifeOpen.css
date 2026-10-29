@@ -1,0 +1,30 @@
+.home-below-hero {display:flow-root;min-width:0}
+.home-scrapbook .home-favorites {
+  position:fixed;right:20px;bottom:calc(112px + env(safe-area-inset-bottom,0px));z-index:46;
+  display:flex;align-items:center;gap:4px;box-sizing:border-box;width:216px;max-width:calc(100vw - 28px);padding:8px 10px 8px 18px;
+  border:1px solid #ffffffd9;border-radius:18px;
+  background:linear-gradient(120deg,#fdf7fcf5,#edf4fdf2);box-shadow:0 8px 28px #43516a24,inset 0 1px 0 #fff;
+  color:#535e79;opacity:0;transform:translateX(20px);pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease;
+}
+.home-scrapbook .home-favorites[data-visible=true] {opacity:1;transform:none;pointer-events:auto}
+.home-scrapbook .home-favorites h2 {flex:1;white-space:nowrap;margin:0;font:650 14px/1.5 var(--sans);letter-spacing:.06em;color:inherit}
+.home-scrapbook .home-favorites button {display:grid;place-items:center;flex:0 0 auto;width:44px;height:44px;padding:6px;margin:0;border:0;border-radius:12px;cursor:pointer;background:transparent;color:#89799b;touch-action:manipulation}
+.home-scrapbook .home-favorites button:hover {background:#fff9}
+.home-scrapbook .home-favorites button:focus-visible {outline:2px solid #9984b2;outline-offset:2px}
+.home-scrapbook .home-favorites button:disabled {opacity:.4;cursor:default}
+.home-scrapbook .home-favorites .home-favorites__star svg {width:33px;height:33px;overflow:visible;filter:drop-shadow(0 2px 2px #bd9cbd33)}
+.home-scrapbook .home-favorites .home-favorites__star path:first-child {fill:#be7a9b;stroke:#fff;stroke-width:2;stroke-linejoin:round}
+.home-scrapbook .home-favorites .home-favorites__shine {fill:none;stroke:#fffafbcc;stroke-width:3;stroke-linecap:round}
+.home-scrapbook .home-favorites .home-favorites__star[aria-disabled=true] svg {opacity:.5}
+.home-scrapbook .home-favorites .home-favorites__replay svg {width:19px;height:19px}
+/* A readable text fallback remains available without creating another block. */
+.home-scrapbook .home-favorites .ml-static-interests {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;margin:-1px;padding:0;border:0;list-style:none}
+@media(max-width:760px){
+  .home-scrapbook .home-favorites {right:12px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:202px;padding-left:14px;border-radius:16px}
+  .home-scrapbook .home-favorites h2 {font-size:13px}
+  body:has(.music-player.music-expanded) .home-scrapbook .home-favorites {visibility:hidden;pointer-events:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-scrapbook .home-favorites {transition:none;transform:none}
+}

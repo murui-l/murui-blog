@@ -1,0 +1,15 @@
+.git
+.env*
+*.db
+*.db-shm
+*.db-wal
+tests
+scripts
+node_modules
+.next
+*.tsbuildinfo
+HANDOFF.md
+CLAUDE.md
+AGENTS.md
+prisma
+/licenses

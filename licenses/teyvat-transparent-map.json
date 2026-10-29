@@ -1,0 +1,13 @@
+{
+  "source": "https://act.hoyolab.com/ys/app/interactive-map/index.html",
+  "originalMap": "teyvat-map.webp",
+  "asset": "/images/artworks/teyvat-map-transparent.webp",
+  "width": 2702,
+  "height": 2295,
+  "SHA256": "57eeb81a82428e838a4b033b19b520b47590e23c81ba261c759feda87e62f548",
+  "bytes": 499156,
+  "officialTiles": 108,
+  "transparentPixels": 4131423,
+  "modification": "Reassembled the verified original tiles with transparent padding; flood-filled only edge-connected empty-map colors (R <= 28, G <= 36, B <= 45), including the near-black antialias tile edges. Feathered the adjacent color-key edge. No geography, crop, destination coordinates or source watermarks changed.",
+  "generatedAt": "2026-10-25T05:28:23.634Z"
+}

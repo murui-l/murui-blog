@@ -1,0 +1,15 @@
+.home-scrapbook .corner-sticker{--cs-curl:0%;position:absolute;display:block;width:64px;height:64px;pointer-events:none;user-select:none;z-index:3}
+.home-scrapbook .corner-sticker-top-left{top:-14px;left:12px}
+.home-scrapbook .corner-sticker-top-right{top:-14px;right:12px}
+.home-scrapbook .corner-sticker-bottom-right{bottom:-14px;right:12px}
+.home-scrapbook .corner-sticker>svg{position:absolute;overflow:hidden;pointer-events:none}
+.home-scrapbook .cs-peel,.home-scrapbook .cs-main,.home-scrapbook .cs-light{position:relative;display:block;width:100%;height:100%;pointer-events:none}
+.home-scrapbook .cs-peel{transform:rotate(-15deg)}
+.home-scrapbook .cs-main{filter:var(--cs-shadow);clip-path:polygon(-15% var(--cs-curl),115% var(--cs-curl),115% 115%,-15% 115%);transition:clip-path 220ms ease-out}
+.home-scrapbook .cs-light{filter:var(--cs-light);transform:rotate(15deg)}
+.home-scrapbook .corner-sticker img{display:block;width:100%;height:100%;object-fit:contain;transform:rotate(var(--cs-tilt));pointer-events:none;-webkit-user-drag:none}
+.home-scrapbook .cs-flap{position:absolute;top:calc(-100% + 2*var(--cs-curl) - 1px);left:0;width:100%;height:100%;clip-path:polygon(-15% -15%,115% -15%,115% var(--cs-curl),-15% var(--cs-curl));transform:scaleY(-1);transition:top 220ms ease-out,clip-path 220ms ease-out;pointer-events:none;opacity:.96}
+.home-scrapbook .cs-flap img{filter:var(--cs-fill);transform:rotate(calc(var(--cs-tilt) + 15deg))}
+@media(min-width:761px) and (hover:hover) and (pointer:fine){.home-scrapbook .corner-sticker-host:hover>.corner-sticker{--cs-curl:14%}}
+@media(max-width:760px){.home-scrapbook .corner-sticker{width:44px;height:44px}.home-scrapbook .corner-sticker-top-left{top:-8px;left:8px}.home-scrapbook .corner-sticker-top-right{top:-8px;right:8px}.home-scrapbook .corner-sticker-bottom-right{bottom:-8px;right:8px}.home-scrapbook .cs-main{transition:none}.home-scrapbook .cs-flap{display:none}}
+@media(prefers-reduced-motion:reduce){.home-scrapbook .corner-sticker{--cs-curl:0%!important}.home-scrapbook .cs-main,.home-scrapbook .cs-flap{transition:none}.home-scrapbook .cs-flap{display:none}}

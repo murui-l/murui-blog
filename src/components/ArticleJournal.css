@@ -1,0 +1,116 @@
+/* Public articles only: previews, writing surfaces and private notes keep their layout. */
+.blog-glass .article-wrap.article-journal {
+  --aj-ink: #555462;
+  --aj-muted: #8e7e87;
+  --aj-rule: #bba69b50;
+  position: relative;
+  isolation: isolate;
+  width: calc(100% - 48px);
+  max-width: 890px;
+  padding: 38px 52px 42px;
+  margin-top: 40px;
+  margin-bottom: 36px;
+  color: var(--aj-ink);
+  background-color: #fcf8ef;
+  background-image: radial-gradient(#af998323 .65px, transparent .85px), linear-gradient(110deg, #fffdf585, #fcf8ef00 60%, #e9dec32b);
+  background-size: 7px 7px, 100% 100%;
+  border: 1px solid #fffdf5;
+  border-radius: 5px 8px 6px 4px;
+  box-shadow: 0 16px 48px #50444126, 2px 4px 0 #e8dfd1, 4px 7px 0 #fcf4e9;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.blog-glass .article-journal::before { content: ""; position: absolute; inset: 14px; border: 1px dashed #bca79955; border-radius: 3px; pointer-events: none; z-index: -1; }
+.article-journal .aj-tape { position: absolute; width: 142px; height: 31px; left: calc(50% - 71px); top: -15px; transform: rotate(-3deg); background: repeating-linear-gradient(115deg, #e9bccb83 0 8px, #f4d3d976 8px 15px); border-inline: 1px dashed #b19ba25c; clip-path: polygon(0 0, 100% 3%, 98% 20%, 100% 35%, 98% 55%, 100% 74%, 98% 100%, 0 97%, 2% 79%, 0 58%, 2% 38%); pointer-events: none; }
+.article-journal .back-link { color: #92798b; min-height: 36px; align-items: center; font-size: 12px; }
+.article-journal .aj-layout { min-width: 0; }
+.article-journal .article-heading { border-bottom: 1px solid var(--aj-rule); padding: 23px 0 27px; margin: 0 0 30px; min-width: 0; }
+.article-journal .aj-heading-meta { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.article-journal .category-label { color: #8b748d; background: linear-gradient(transparent 45%, #e8d5e47d 45% 92%, transparent 92%); border: 0; padding: 1px 3px; font-size: 12px; }
+.article-journal .aj-date-stamp { display: inline-block; font: 12px/1.6 Georgia, "KaiTi", "STKaiti", serif; color: #a17b85; border: 1px solid #b8959b87; padding: 4px 9px; border-radius: 2px; transform: rotate(3deg); letter-spacing: .04em; }
+.article-journal .article-heading h1 { color: #5c5360; font-family: var(--serif); font-size: clamp(29px, 3vw, 38px); line-height: 1.55; letter-spacing: .025em; margin: 23px 0 18px; }
+.article-journal .article-excerpt { color: var(--aj-muted); font-size: 15px; line-height: 1.95; }
+.article-journal .article-byline { color: #96868d; font-size: 12px; }
+.article-journal .mini-avatar { background: #e9dfe5; color: #8e758b; }
+.article-journal .aj-reading { min-width: 0; }
+.article-journal .aj-cover { display: block; width: 100%; margin: 0 0 34px; border: 6px solid #fffef9; outline: 1px solid #b4a79831; border-radius: 3px; box-shadow: 1px 4px 10px #7a646b13; }
+.article-journal .aj-cover .soft-image__img { width: 100%; height: 100%; object-fit: contain; border-radius: 0; margin: 0; }
+.article-journal .aj-prose { font-family: var(--sans); font-size: 17px; line-height: 2.05; color: var(--aj-ink); letter-spacing: .015em; }
+.article-journal .aj-prose p { margin-bottom: 1.55em; }
+.article-journal .aj-prose :is(h1,h2,h3,h4,h5,h6) { color: #655767; font-family: var(--serif); scroll-margin-top: 32px; outline-offset: 6px; }
+.article-journal .aj-prose :is(h2,h3) { width: fit-content; max-width: 100%; padding-inline: 2px; background: linear-gradient(transparent 72%, #eddbe17d 72% 93%, transparent 93%); }
+.article-journal .aj-prose h2 { font-size: 26px; }
+.article-journal .aj-prose h3 { font-size: 22px; background-image: linear-gradient(transparent 75%, #d7e5ed8c 75% 94%, transparent 94%); }
+.article-journal .aj-prose a { color: #827295; text-decoration-color: #bba7c4; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.article-journal .aj-prose a:hover { color: #a5748b; }
+.article-journal .aj-prose blockquote { border-left: 3px solid #c7a9bc; border-radius: 0 3px 4px 0; color: #7f6b7c; background: #e8dce744; padding: 18px 23px; margin: 1.8em 0; }
+.article-journal .aj-prose li::marker { color: #a88da7; }
+.article-journal .aj-prose hr { border-color: #bda8a580; border-top-style: dashed; margin-block: 2.6em; }
+.article-journal .aj-prose :not(pre)>code { background: #e9dfe57a; color: #826e80; padding: 3px 6px; }
+.article-journal .aj-prose pre { max-width: 100%; background: #eee8ddab; border: 1px solid #b6a79452; border-radius: 3px; font-size: 14px; line-height: 1.8; padding: 20px; overflow-x: auto; white-space: pre; overflow-wrap: normal; }
+.article-journal .aj-prose table { max-width: 100%; font-size: 15px; overflow-x: auto; border-radius: 2px; }
+.article-journal .aj-prose :is(td,th) { min-width: 100px; border-color: #c8b8ad78; padding: 10px 14px; }
+.article-journal .aj-prose th { background: #e9dce480; color: #78677c; }
+.article-journal .aj-prose .aj-body-image { display: block; max-width: 100%; width: 100%; border-radius: 3px; margin: 1.8em auto; border: 5px solid #fffef8; outline: 1px solid #bbab9b40; box-shadow: 1px 4px 9px #83716e12; }
+.article-journal .aj-body-image .soft-image__img { margin: 0; border-radius: 0; object-fit: contain; }
+.article-journal .article-end { position: relative; margin-top: 46px; padding-top: 24px; padding-bottom: 8px; border-color: var(--aj-rule); border-top-style: dashed; }
+.article-journal .post-tags a { background: #e9dfe655; border: 1px solid #c0acba44; color: #8c758c; border-radius: 2px; }
+.article-journal .article-end>p { font-family: "KaiTi", "STKaiti", var(--serif); font-size: 16px; color: #9a8495; margin: 34px 0 12px; }
+.article-journal .aj-signature { display: block; text-align: right; font: italic 19px/1.7 "KaiTi", "STKaiti", var(--serif); color: #a08694; padding-right: 3px; transform: rotate(-3deg); }
+.article-journal .aj-signature span { font-style: normal; margin-left: 8px; color: #c7a4b5; }
+.article-journal .related { margin-top: 38px; padding-top: 31px; border-color: var(--aj-rule); }
+.article-journal .related>.eyebrow { color: #ab969e; font-size: 9px; }
+.article-journal .related>h2 { color: #7a697b; font-size: 23px; }
+.article-journal .related a { border: 1px solid #c5b6a657; border-radius: 3px; background: #fffdf48c; padding: 21px; box-shadow: 1px 3px 0 #d8c9c232; }
+.article-journal .related a>span { color: #a0869b; }
+.article-journal .related h3 { color: #746373; }
+.article-journal .related a>svg { color: #b19aae; }
+.article-journal .aj-toc { align-self: start; min-width: 0; color: #93808e; }
+.article-journal .aj-toc-desktop { display: none; }
+.article-journal .aj-toc-mobile { margin: 0 0 28px; border-block: 1px dashed #b6a2ab6b; background: #eddfdf2e; }
+.article-journal .aj-toc-mobile summary { cursor: pointer; padding: 13px 8px; font-family: "KaiTi", "STKaiti", var(--serif); font-size: 16px; color: #8d748a; }
+.article-journal .aj-toc-mobile summary>span { float: right; }
+.article-journal .aj-toc ol { margin: 0; padding: 0 8px 15px; list-style: none; font-size: 13px; line-height: 1.65; max-height: 55vh; overflow-y: auto; overscroll-behavior: contain; }
+.article-journal .aj-toc li { margin: 0; }
+.article-journal .aj-toc a { display: block; padding: 7px 9px; border-left: 2px solid transparent; overflow-wrap: anywhere; }
+.article-journal .aj-toc li[data-level="3"] a { padding-left: 20px; font-size: 12px; }
+.article-journal .aj-toc a[aria-current="location"] { color: #7d5e7a; background: #e8d5e37d; border-left-color: #ba8fac; }
+.article-journal .aj-toc a:hover { color: #865f7e; background: #e8d5e348; }
+.article-journal :is(a,summary):focus-visible { outline: 2px solid #a382a3; outline-offset: 4px; }
+@media (min-width: 1051px) {
+  .blog-glass .article-journal-with-toc { max-width: 1140px; }
+  .article-journal .aj-layout-with-toc { display: grid; grid-template-columns: minmax(0,1fr) 180px; column-gap: 36px; }
+  .article-journal .aj-layout-with-toc>.article-heading { grid-column: 1; }
+  .article-journal .aj-layout-with-toc>.aj-reading { grid-column: 1; grid-row: 2; }
+  .article-journal .aj-layout-with-toc>.aj-toc { grid-column: 2; grid-row: 2; position: sticky; top: 30px; }
+  .article-journal .aj-toc-desktop { display: block; position: relative; padding: 20px 8px 10px; background: #eee3dfb8; border: 1px solid #d3c3b655; box-shadow: 2px 4px 0 #cdbfb22b; border-radius: 1px 2px 18px 2px; }
+  .article-journal .aj-toc-desktop::before { content: ""; position: absolute; width: 64px; height: 19px; left: calc(50% - 32px); top: -9px; transform: rotate(5deg); background: repeating-linear-gradient(90deg,#bed1da85 0 8px,#dce5e594 8px 16px); }
+  .article-journal .aj-toc-label { display: block; font: 16px/1.7 "KaiTi", "STKaiti", var(--serif); color: #987a90; margin: 0 9px 12px; }
+  .article-journal .aj-toc ol { padding: 0; font-size: 12px; max-height: calc(100vh - 170px); }
+  .article-journal .aj-toc li[data-level="3"] a { font-size: 11px; padding-left: 17px; }
+  .article-journal .aj-toc-flower { display: block; text-align: right; padding: 8px 9px 0; font-size: 21px; color: #bd9fae; }
+  .article-journal .aj-toc-mobile { display: none; }
+}
+@media (max-width: 650px) {
+  .blog-glass .article-wrap.article-journal { width: calc(100% - 24px); margin-top: 24px; margin-bottom: 25px; padding: 25px 20px 30px; border-radius: 4px 6px 4px 3px; }
+  .blog-glass .article-journal::before { inset: 8px; }
+  .article-journal .aj-tape { width: 104px; height: 25px; left: calc(50% - 52px); top: -12px; }
+  .article-journal .article-heading { padding-top: 17px; margin-bottom: 24px; }
+  .article-journal .article-heading h1 { margin-top: 22px; font-size: 29px; line-height: 1.6; }
+  .article-journal .article-excerpt { font-size: 16px; }
+  .article-journal .aj-heading-meta { gap: 12px; }
+  .article-journal .aj-date-stamp { font-size: 11px; padding: 3px 6px; }
+  .article-journal .article-byline { font-size: 11px; }
+  .article-journal .aj-prose { font-size: 16px; line-height: 2; letter-spacing: 0; }
+  .article-journal .aj-prose h2 { font-size: 24px; }
+  .article-journal .aj-prose h3 { font-size: 21px; }
+  .article-journal .aj-prose blockquote { padding: 14px 16px; }
+  .article-journal .aj-prose pre { padding: 15px; }
+  .article-journal .aj-cover { border-width: 4px; margin-bottom: 27px; }
+  .article-journal .aj-prose .aj-body-image { border-width: 3px; }
+  .article-journal .related a { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.article-journal) { scroll-behavior: auto; }
+  .article-journal :is(a,summary) { scroll-behavior: auto; transition: none; }
+}

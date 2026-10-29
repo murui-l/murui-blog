@@ -1,0 +1,2 @@
+export function Logo(){return <div style={{display:"flex",alignItems:"center",gap:12,fontSize:24,fontWeight:600,color:"#526b4e"}}><Mark/>沐瑞的小窝</div>;}
+export function Mark(){return <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#edf0e3"/><path d="m13 30 19-17 19 17M18 27v24h28V27M27 51V36h10v15" fill="none" stroke="#526b4e" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/><circle cx="47" cy="15" r="5" fill="#dcb777"/></svg>;}
