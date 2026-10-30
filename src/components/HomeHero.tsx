@@ -27,14 +27,20 @@ export default function HomeHero({ avatar, description, notice }: { avatar: stri
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     let frame = 0;
+    let paintedProgress = -1;
     const update = () => {
       frame = 0;
       const node = hero.current;
       if (!node) return;
       const progress = media.matches || window.innerHeight < 600 ? 1 : Math.min(1, Math.max(0, -node.getBoundingClientRect().top / (window.innerHeight * (window.innerWidth < 700 ? .38 : .52))));
-      node.style.setProperty("--hero-progress", String(progress));
-      node.style.setProperty("--avatar-progress", String(Math.min(1, progress / .85)));
-      node.style.setProperty("--profile-opacity", String(Math.min(1, Math.max(0, (progress - .18) / .6))));
+      // Once the hero is above the viewport, scrolling must not invalidate its
+      // inherited custom properties and the entire sticky subtree every frame.
+      if (progress !== paintedProgress) {
+        paintedProgress = progress;
+        node.style.setProperty("--hero-progress", String(progress));
+        node.style.setProperty("--avatar-progress", String(Math.min(1, progress / .85)));
+        node.style.setProperty("--profile-opacity", String(Math.min(1, Math.max(0, (progress - .18) / .6))));
+      }
       const nextDocked = media.matches || progress >= .55;
       if (dockedRef.current !== nextDocked) { dockedRef.current = nextDocked; setDocked(nextDocked); }
     };

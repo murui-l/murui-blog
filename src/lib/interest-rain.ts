@@ -41,6 +41,22 @@ export function makeInterestBounds(width: number, height: number) {
   ];
 }
 
+/** Resize the existing world instead of respawning its stars when mobile
+ * browser chrome changes the viewport. Pending arrivals and velocities survive. */
+export function resizeInterestViewport(engine: Matter.Engine, bodies: Matter.Body[], previous: { width: number; height: number }, next: { width: number; height: number }) {
+  if (![previous.width, previous.height, next.width, next.height].every(value => Number.isFinite(value) && value > 0)) return false;
+  for (const body of Composite.allBodies(engine.world)) if (body.isStatic) Composite.remove(engine.world, body);
+  Composite.add(engine.world, makeInterestBounds(next.width, next.height));
+  for (const body of bodies) {
+    const halfWidth = Math.min(next.width / 2, (body.bounds.max.x - body.bounds.min.x) / 2 + 10);
+    Body.setPosition(body, {
+      x: Math.max(halfWidth, Math.min(next.width - halfWidth, body.position.x * next.width / previous.width)),
+      y: body.position.y < 0 ? body.position.y : body.position.y + next.height - previous.height,
+    });
+  }
+  return true;
+}
+
 type QuietPile = { steps: number; origins: { x: number; y: number; angle: number }[] };
 /** Compound tips can keep waking a resting pile with subpixel solver motion.
  * Require the whole pile to stay within 1px / .02rad for 1.5 seconds. Falling
@@ -169,7 +185,7 @@ export function mountInterestRain(stage: HTMLUListElement, section: HTMLElement)
     const target = (event.target as Element).closest<HTMLButtonElement>(".ml-rain-pill button");
     const pill = pills.find(item => item.element.contains(target));
     if (!target || !pill || pending.includes(pill)) return;
-    event.preventDefault();
+    if (event.pointerType !== "touch") event.preventDefault();
     Sleeping.set(pill.body, false);
     const p = point(event);
     const constraint = Constraint.create({
@@ -219,7 +235,15 @@ export function mountInterestRain(stage: HTMLUListElement, section: HTMLElement)
     clearTimeout(resizeTimer);
     resizeTimer = window.setTimeout(() => {
       const rect = stage.getBoundingClientRect();
-      if (initialized && !dismissed && (Math.abs(rect.width - width) > 2 || Math.abs(rect.height - height) > 2)) reset();
+      if (!initialized || dismissed || destroyed || rect.width <= 0 || rect.height <= 0) return;
+      if (Math.abs(rect.width - width) <= 2 && Math.abs(rect.height - height) <= 2) return;
+      // A breakpoint may actually change the star geometry; only that needs a
+      // new collider. Address-bar and ordinary viewport changes retain the pile.
+      if (pills.some(pill => pill.element.offsetWidth !== pill.width || pill.element.offsetHeight !== pill.height)) { reset(); return; }
+      release();
+      if (resizeInterestViewport(engine, pills.map(pill => pill.body), { width, height }, rect)) {
+        width = rect.width; height = rect.height; paint(); resume();
+      }
     }, 150);
   };
   // An explicit button action must work even before the observer has caught up

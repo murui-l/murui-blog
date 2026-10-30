@@ -12,3 +12,6 @@ body[data-home-palette] .home-scrapbook .hm-source{background:var(--murui-paper-
 body[data-home-palette] .site-header.header-autohide .header-tab{background:linear-gradient(105deg,var(--murui-paper-a),var(--murui-paper-b))}
 body[data-home-palette] .site-header.header-autohide .header-tab-handle{background:var(--murui-highlight)}
 @media(prefers-reduced-motion:reduce){body[data-home-palette]{transition:none}}
+/* Avoid repainting inherited colors across the whole document on every frame
+   of a mobile wallpaper crossfade. The new palette still applies once. */
+@media(max-width:760px),(pointer:coarse){body[data-home-palette]{transition:none}}

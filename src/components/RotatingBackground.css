@@ -6,6 +6,10 @@
   pointer-events: none;
   user-select: none;
   background: #e1deec;
+  /* Isolate only the viewport-sized wallpaper, not a document-sized GPU surface. */
+  contain: strict;
+  isolation: isolate;
+  transform: translateZ(0);
 }
 
 .site-backdrop-scene {
@@ -34,6 +38,11 @@
 @media (max-width: 650px) {
   .site-backdrop-scene img { filter: blur(3px) saturate(.85) brightness(1.08); }
   .site-backdrop-veil { background: linear-gradient(140deg, #efeaf578, #f3eaf585 55%, #e4f0fb73); }
+}
+
+/* Keep one stable raster while the mobile address bar expands/collapses. */
+@media (max-width: 760px), (pointer: coarse) {
+  .site-backdrop { bottom: auto; height: 100vh; height: 100lvh; }
 }
 
 @media (prefers-reduced-motion: reduce) {

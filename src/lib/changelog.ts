@@ -10,6 +10,10 @@ export type SiteChange = {
 // verified against the local handoff notes. Add an entry with each site release.
 export const siteChanges: SiteChange[] = [
   {
+    date: "2026-10-30", title: "让手机下滑更稳一些", kind: "更新",
+    items: ["减轻首页背景和嵌入地图在手机上的图片开销，稳定滚动背景；星星不再因地址栏变化重新下落，从星星和地图上也能顺畅滑动页面。"],
+  },
+  {
     date: "2026-10-30", title: "让小窝多一点提瓦特的光", kind: "新增",
     items: ["电台添上旋曜玉帛圆环，导航连成星座；心海水泡与胡桃幽蝶轻轻出现。相册大图加上留影机角标，地图记住当前浏览器去过的地方，出发时亮起一圈元素光。"],
     link: { href: "/#home-teyvat-map", label: "再去提瓦特逛逛" },

@@ -6,6 +6,7 @@ import { homeBackgroundAlbumName, selectHomeBackgroundScenes, takeBackgroundScen
 import type { GallerySnapshot } from "@/lib/gallery-types";
 import "./RotatingBackground.css";
 import HomePalette from "./HomePalette";
+import { backdropImageSource } from "@/lib/backdrop-image";
 
 const scenes = [
   { src: "/images/backgrounds/megumin-room.webp", position: "65% 45%" },
@@ -57,7 +58,7 @@ function FixedBackground() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             ref={(element) => { images.current[index] = element; }}
-            src={scene.src}
+            src={backdropImageSource(scene.src, 1200)}
             alt=""
             style={{ objectPosition: scene.position }}
             decoding="async"
@@ -72,14 +73,17 @@ function FixedBackground() {
 }
 
 const fallbackScenes: BackgroundScene[] = scenes.map((scene, index) => ({ ...scene, id: `fallback-${index}` }));
-type Display = { current: BackgroundScene; previous: BackgroundScene | null; front: boolean };
+type RenderedScene = BackgroundScene & { displaySrc: string };
+type Display = { current: RenderedScene; previous: RenderedScene | null; front: boolean };
 
 function AlbumBackground() {
-  const [display, setDisplay] = useState<Display>({ current: fallbackScenes[0], previous: null, front: true });
+  const [display, setDisplay] = useState<Display>({ current: { ...fallbackScenes[0], displaySrc: backdropImageSource(fallbackScenes[0].src) }, previous: null, front: true });
   const [catalog, setCatalog] = useState<{ source: string; count: number; albumId: string | null }>({ source: "fallback", count: 0, albumId: null });
 
   useEffect(() => {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    // Choose once per mount; browser toolbar resizing must not restart image loads.
+    const imageWidth = window.matchMedia("(max-width: 760px)").matches ? 640 : 1200;
     let pool = fallbackScenes;
     let poolSignature = "";
     let current = fallbackScenes[0];
@@ -94,7 +98,7 @@ function AlbumBackground() {
     let request: AbortController | undefined;
     let cancelLoad: (() => void) | undefined;
 
-    const load = (scene: BackgroundScene) => new Promise<boolean>(resolve => {
+    const load = (src: string) => new Promise<boolean>(resolve => {
       const image = new window.Image();
       let finished = false;
       const finish = (success: boolean) => {
@@ -114,7 +118,7 @@ function AlbumBackground() {
       };
       image.onload = () => { void ready(); };
       image.onerror = cancel;
-      image.src = scene.src;
+      image.src = src;
       if (image.complete && image.naturalWidth) void ready();
     });
 
@@ -128,12 +132,13 @@ function AlbumBackground() {
           bag = next.remaining;
           if (!next.scene) return;
           const scene = next.scene;
-          const loaded = await load(scene);
+          const displaySrc = backdropImageSource(scene.src, imageWidth);
+          const loaded = await load(displaySrc);
           if (disposed || selection !== version) return;
           if (!loaded) { failed.add(scene.src); continue; }
           if (document.hidden || (!force && reducedMotion.matches)) return;
           current = scene;
-          setDisplay(previous => ({ current: scene, previous: reducedMotion.matches ? null : previous.current, front: reducedMotion.matches }));
+          setDisplay(previous => ({ current: { ...scene, displaySrc }, previous: reducedMotion.matches ? null : previous.current, front: reducedMotion.matches }));
           return;
         }
       } finally { if (selection === version) busy = false; }
@@ -215,14 +220,14 @@ function AlbumBackground() {
   }, [display.current.src, display.previous]);
 
   return <div className="site-backdrop" aria-hidden="true" data-source={catalog.source} data-gallery-count={catalog.count} data-album-name={homeBackgroundAlbumName} data-album-id={catalog.albumId ?? undefined}>
-    <HomePalette src={display.current.src} />
+    <HomePalette src={display.current.displaySrc} />
     {display.previous && <div key={display.previous.src} className={`site-backdrop-scene${!display.front ? " is-active" : ""}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={display.previous.src} alt="" style={{ objectPosition: display.previous.position }} data-image-id={display.previous.id} />
+      <img src={display.previous.displaySrc} alt="" style={{ objectPosition: display.previous.position }} decoding="async" data-image-id={display.previous.id} />
     </div>}
     <div key={display.current.src} className={`site-backdrop-scene${display.front ? " is-active" : ""}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={display.current.src} alt="" style={{ objectPosition: display.current.position }} decoding="async" data-image-id={display.current.id} />
+      <img src={display.current.displaySrc} alt="" style={{ objectPosition: display.current.position }} decoding="async" data-image-id={display.current.id} />
     </div>
     <div className="site-backdrop-veil" />
   </div>;

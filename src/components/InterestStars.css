@@ -31,3 +31,8 @@
  .ml-rain-star .ml-star-label{font-size:12px}
  .home-scrapbook .ml-journal .ml-static-interests .ml-rain-star{width:94px;height:94px}
 }
+/* A vertical swipe that begins on a star belongs to page scrolling. Browsers
+   cancel the pointer drag when they take over, so mouse/horizontal drag remains. */
+@media(pointer:coarse){
+ .murui-interest-rain .ml-rain-pill.ml-rain-star button{touch-action:pan-y pinch-zoom}
+}

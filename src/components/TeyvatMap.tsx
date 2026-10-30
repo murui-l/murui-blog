@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { getImageProps } from "next/image";
 import type { Map as LeafletMap } from "leaflet";
 import { teyvatMap, teyvatDestinations } from "@/lib/teyvat";
 import { musicActions } from "@/lib/music-player-store";
@@ -37,7 +38,12 @@ export default function TeyvatMap({ embedded = false }: { embedded?: boolean }) 
         const coarse = window.matchMedia("(pointer: coarse)").matches;
         const map = L.map(element, { crs: L.CRS.Simple, minZoom: -4, maxZoom: 1, zoomSnap: .1, zoomDelta: .5, zoomControl: false, attributionControl: false, maxBounds: bounds.pad(.2), maxBoundsViscosity: .9, zoomAnimation: !reduced, fadeAnimation: !reduced, markerZoomAnimation: !reduced, inertia: !reduced, scrollWheelZoom: !embedded, dragging: !embedded || !coarse, keyboard: !embedded });
         instance.current = map;
-        const layer = L.imageOverlay(teyvatMap.src, bounds, { alt: "提瓦特地图", interactive: false });
+        // Coordinates stay in the original map space; the phone decodes only
+        // the pixels needed for this small embedded surface, preserving alpha.
+        const compact = coarse || window.matchMedia("(max-width: 760px)").matches;
+        const mapSource = embedded && compact ? getImageProps({ src: teyvatMap.src, alt: "", width: 600, height: 510, quality: 75 }).props.src : teyvatMap.src;
+        if (embedded && coarse) { map.touchZoom.disable(); map.doubleClickZoom.disable(); map.boxZoom.disable(); }
+        const layer = L.imageOverlay(mapSource, bounds, { alt: "提瓦特地图", interactive: false });
         layer.on("load", () => { if (!disposed) setReady(true); });
         layer.on("error", () => { if (!disposed) setFailed(true); });
         layer.addTo(map);

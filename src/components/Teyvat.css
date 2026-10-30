@@ -75,3 +75,4 @@
  .teyvat-atlas--embedded .teyvat-atlas__source{left:3px;bottom:11px;padding:4px;font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.teyvat-atlas--embedded *{transition:none!important;animation:none!important}}
+@media(pointer:coarse){.teyvat-atlas--embedded .teyvat-atlas__canvas{touch-action:pan-y pinch-zoom}}
