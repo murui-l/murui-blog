@@ -21,15 +21,20 @@ const starStyle = { "--interest-star-clip": interestStarClip } as CSSProperties;
 export default function InterestRain({ sectionRef }: { sectionRef: RefObject<HTMLElement | null> }) {
   const stageRef = useRef<HTMLUListElement>(null);
   const [enabled, setEnabled] = useState(false);
+  const [compact, setCompact] = useState(false);
+  const interests = compact ? homeProfile.mobileInterests : homeProfile.interests;
 
   useEffect(() => {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setEnabled(!preference.matches);
+    const mobile = window.matchMedia("(max-width: 760px), (pointer: coarse)");
+    const sync = () => { setCompact(mobile.matches); setEnabled(!preference.matches); };
     const initial = window.setTimeout(sync, 0);
     preference.addEventListener("change", sync);
+    mobile.addEventListener("change", sync);
     return () => {
       window.clearTimeout(initial);
       preference.removeEventListener("change", sync);
+      mobile.removeEventListener("change", sync);
     };
   }, []);
 
@@ -47,11 +52,11 @@ export default function InterestRain({ sectionRef }: { sectionRef: RefObject<HTM
       if (!disposed) setEnabled(false);
     });
     return () => { disposed = true; cleanup?.(); };
-  }, [enabled, sectionRef]);
+  }, [enabled, compact, sectionRef]);
 
   if (!enabled) return (
     <ul id="murui-interest-stars" className="ml-static-interests" aria-label="兴趣收藏">
-      {homeProfile.interests.map((interest, index) => (
+      {interests.map((interest, index) => (
         <li key={`${interest}-${index}`} className={`ml-rain-star ml-interest-color-${index % 5}`} style={starStyle}>
           <StarFace interest={interest} />
         </li>
@@ -61,7 +66,7 @@ export default function InterestRain({ sectionRef }: { sectionRef: RefObject<HTM
 
   return createPortal(
     <ul ref={stageRef} id="murui-interest-stars" className="murui-interest-rain" data-motion="idle" aria-label="兴趣收藏，标签可拖动，或按回车弹起" inert>
-      {homeProfile.interests.map((interest, index) => (
+      {interests.map((interest, index) => (
         <li key={`${interest}-${index}`} className={`ml-rain-pill ml-rain-star ml-interest-color-${index % 5}`} style={starStyle}>
           <StarFace interest={interest} />
           <button type="button" aria-label={`${interest}，第${index + 1}枚兴趣，拖动或按回车弹起`} />

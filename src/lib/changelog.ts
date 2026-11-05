@@ -10,6 +10,10 @@ export type SiteChange = {
 // verified against the local handoff notes. Add an entry with each site release.
 export const siteChanges: SiteChange[] = [
   {
+    date: "2026-11-05", title: "手机上的五颗小喜欢", kind: "更新",
+    items: ["手机端只留下海星、心海、民谣、刺绣和天使各一颗兴趣星星，减少下落和消散前后的渲染负担；电脑端保留原来的21颗。"],
+  },
+  {
     date: "2026-10-30", title: "让手机下滑更稳一些", kind: "更新",
     items: ["减轻首页背景和嵌入地图在手机上的图片开销，稳定滚动背景；星星不再因地址栏变化重新下落，从星星和地图上也能顺畅滑动页面。"],
   },

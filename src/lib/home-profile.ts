@@ -38,6 +38,7 @@ export const homeProfile = {
   ],
   // Six separate 海星 interests are intentional: the original plus five more.
   interests: ["心海", "惠惠", "洛琪希", "椎名真昼", "音乐", "生活随笔", "照片收藏", "声控", "素晴", "温迪", "Astrbot", "海星", "猫猫", "布偶", "刺绣", "收集", "海星", "海星", "海星", "海星", "海星"],
+  mobileInterests: ["海星", "心海", "民谣", "刺绣", "天使"],
   social: [
     { name: "GitHub", href: "https://github.com/murui-l", icon: "github" },
     { name: "Bilibili", href: "https://space.bilibili.com/406213108", icon: "bilibili" },
